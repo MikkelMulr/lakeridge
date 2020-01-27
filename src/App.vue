@@ -1,17 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <Home msg="Home" />
+    <Home msg="Lakeridge Trials: Fact vs Fiction" :mythData="this.myths.data.myths" />
   </div>
 </template>
 
 <script>
-import Home from "./components/Home.component.vue";
+import Home from "./components/Home.vue";
+import axios from "axios";
 
 export default {
   name: "app",
   components: {
     Home
+  },
+  data() {
+    return {
+      myths: null
+    };
+  },
+  mounted() {
+    axios.get("./data.json").then(response => (this.myths = response));
   }
 };
 </script>
