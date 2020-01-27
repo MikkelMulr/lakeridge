@@ -6,7 +6,8 @@ Myth 1 - Clinical Trials participants are human guinea pigs [False]
 
 Myth 2 - Every trial uses a placebo as a comparison [False]
   -> Placebos are rarely used in serious illnesses such as cancer
-  -> Placebos are only used in cases where a treatment has not been established for an illness, in order to create a baseline for comparison.
+  -> Placebos are only used in cases where a treatment has not been established for an illness.
+  -> If they are used it is in order to create a baseline for comparison.
 
 
 Myth 3 - If there is a clinical trial that could help me, my doctor will tell me about it [True]
