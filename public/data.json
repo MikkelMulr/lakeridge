@@ -1,0 +1,60 @@
+{
+  "myths": [{
+      "id": 1,
+      "myth": "Clinical Trials participants are human guinea pigs",
+      "true_or_false": false,
+      "facts": [
+        "Clinical trials incorporate the best available treatment",
+        "Before any human is administered clinical trial medication or treatments, they will have undergone very extensive research and testing to make it as safe as possible",
+        "Trials are carefully designed to have safeguards and protocols to ensure"
+      ]
+    },
+    {
+      "id": 2,
+      "myth": "Every trial uses a placebo as a comparison",
+      "true_or_false": false,
+      "facts": [
+        "Placebos are rarely used in serious illnesses such as cancer",
+        "Placebos are only used in cases where a treatment has not been established for an illness, in order to create a baseline for comparison"
+      ]
+    },
+    {
+      "id": 3,
+      "myth": "If there is a clinical trial that could help me, my doctor will tell me about it",
+      "true_or_false": true,
+      "facts": [
+        "If your doctor is aware of a clinical trial that may be a fit for your personal situation they may choose to tell you about it",
+        "There are over 1000 oncology clinical trials going on at all times, so your doctor may not be aware of them all in order to be able to recommend one to you",
+        "While clinical trials may be the correct path for some, it is not always the correct route for a patient to take"
+      ]
+    },
+    {
+      "id": 4,
+      "myth": "Clinical trials are for patients who have run out of options",
+      "true_or_false": false,
+      "facts": [
+        "Although there are occurences of patients being admitted to a trial after they have exhaused other options, many times participating in a CT can offer an adjustment/ addition to a standard treatment plan already perscribed to a patient with potential benefits.",
+        "Trials do not always apply just to patients who are already, or currently afflicated by a disease/ illness. Some trials are geared towards patients who are at risk, or in remission."
+      ]
+    },
+    {
+      "id": 5,
+      "myth": "If I join a clinical trial, I won't receieve the same quality of care that I currently have with my doctor",
+      "true_or_false": false,
+      "facts": [
+        "All participants in clinical trials recieve a high level of care and are encouraged to discuss any thoughts or worries with the CT staff",
+        "Research shows that participants in clinical trials show more positive results in similar stages of their respective ailments than those who only recieve standard treatments."
+      ]
+    },
+    {
+      "id": 6,
+      "myth": "CTs are dangerous because they use new practices and medicines / Clinical trials may include painful or unpleasant parts",
+      "true_or_false": true,
+      "facts": [
+        "All clinical trials carry their own level of risks and it is up to the patient and their doctor to decide if those risks are worth taking",
+        "The Reaearch Ethical Board (REB) will also ensure that the benefits and risks are carefully weighed and that the trial is reviewed for unnecessary harm or discomfort before it starts",
+        "participants recieve reguard and careful medical attention and are closely monitored for safety concerns"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+App -> Home (Pick Game or Browse) -> 
+                -> if browse show 6 panel layout of myths
+                -> if Game go to first myth
