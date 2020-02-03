@@ -1,6 +1,6 @@
 <template>
   <div class="QuestionCard">
-    <h4>{{myth}}</h4>
+    <h4 v-on:click="handleClick">{{myth}}</h4>
   </div>
 </template>
 
@@ -9,16 +9,18 @@ export default {
   name: "QuestionCard",
   props: {
     myth: String,
-    id: Number
+    id: Number,
+    handleClick: Function
   }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.Question {
-  width: 30vw;
-  height: 100px;
+.QuestionCard {
+  border-radius: 10px;
+  width: 320px;
+  height: 150px;
   background: red;
 }
 </style>

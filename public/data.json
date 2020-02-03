@@ -1,7 +1,7 @@
 {
   "myths": [{
       "id": 1,
-      "myth": "Clinical Trials participants are human guinea pigs",
+      "myth_title": "Clinical Trials participants are human guinea pigs",
       "true_or_false": false,
       "facts": [
         "Clinical trials incorporate the best available treatment",
@@ -11,7 +11,7 @@
     },
     {
       "id": 2,
-      "myth": "Every trial uses a placebo as a comparison",
+      "myth_title": "Every trial uses a placebo as a comparison",
       "true_or_false": false,
       "facts": [
         "Placebos are rarely used in serious illnesses such as cancer",
@@ -20,7 +20,7 @@
     },
     {
       "id": 3,
-      "myth": "If there is a clinical trial that could help me, my doctor will tell me about it",
+      "myth_title": "If there is a clinical trial that could help me, my doctor will tell me about it",
       "true_or_false": true,
       "facts": [
         "If your doctor is aware of a clinical trial that may be a fit for your personal situation they may choose to tell you about it",
@@ -30,7 +30,7 @@
     },
     {
       "id": 4,
-      "myth": "Clinical trials are for patients who have run out of options",
+      "myth_title": "Clinical trials are for patients who have run out of options",
       "true_or_false": false,
       "facts": [
         "Although there are occurences of patients being admitted to a trial after they have exhaused other options, many times participating in a CT can offer an adjustment/ addition to a standard treatment plan already perscribed to a patient with potential benefits.",
@@ -39,7 +39,7 @@
     },
     {
       "id": 5,
-      "myth": "If I join a clinical trial, I won't receieve the same quality of care that I currently have with my doctor",
+      "myth_title": "If I join a clinical trial, I won't receieve the same quality of care that I currently have with my doctor",
       "true_or_false": false,
       "facts": [
         "All participants in clinical trials recieve a high level of care and are encouraged to discuss any thoughts or worries with the CT staff",
@@ -48,7 +48,7 @@
     },
     {
       "id": 6,
-      "myth": "CTs are dangerous because they use new practices and medicines / Clinical trials may include painful or unpleasant parts",
+      "myth_title": "CTs are dangerous because they use new practices and medicines / Clinical trials may include painful or unpleasant parts",
       "true_or_false": true,
       "facts": [
         "All clinical trials carry their own level of risks and it is up to the patient and their doctor to decide if those risks are worth taking",

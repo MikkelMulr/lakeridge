@@ -7,23 +7,20 @@
 </template>
 
 <script>
-import axios from "axios";
-
 export default {
   name: "Home",
   props: {},
-  components: {},
-  data() {
-    return {
-      myths: null
-    };
-  },
-  created() {
-    axios.get("./data.json").then(response => (this.myths = response));
-  }
+  components: {}
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
 </style>

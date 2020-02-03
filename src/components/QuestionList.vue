@@ -1,24 +1,50 @@
 <template>
   <div id="QuestionList">
-    <Question
-      v-for="(item) in mythData.data.myths"
-      :key="item.id"
-      :myth="item.myth"
-      :answer="item.true_or_false"
-    />
+    <div class="CardView" v-if="this.viewState">
+      <Information
+        :mythData="this.myths.data.myths[this.mythClicked]"
+        :nextEvent="updateCurrentMyth"
+      />
+    </div>
+    <div class="CardView" v-else>
+      <QuestionCard
+        v-for="(item) in mythData.data.myths"
+        :key="item.id"
+        :myth="item.myth_title"
+        :answer="item.true_or_false"
+        :handleClick="updateViewState"
+        v-on:click="updateMythClicked(item.id)"
+      />
+    </div>
   </div>
 </template>
 
 <script>
-import Question from "./Question.vue";
+import QuestionCard from "./QuestionCard.vue";
+import Information from "./Information";
 
 export default {
   name: "QuestionList",
   props: {
     mythData: Array
   },
+  data() {
+    return {
+      viewState: false,
+      mythClicked: 0
+    };
+  },
   components: {
-    Question
+    QuestionCard,
+    Information
+  },
+  methods: {
+    updateViewState: function() {
+      this.viewState = !this.viewState;
+    },
+    updateMythClicked: function(id) {
+      this.mythClicked = id;
+    }
   }
 };
 </script>
@@ -26,12 +52,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 #QuestionList {
+  flex-wrap: wrap;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
-  background: #aaa;
+  height: 80%;
+  width: 50%;
 }
 </style>
