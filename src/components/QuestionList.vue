@@ -1,7 +1,7 @@
 <template>
   <div id="QuestionList">
     <Question
-      v-for="(item) in mythData"
+      v-for="(item) in mythData.data.myths"
       :key="item.id"
       :myth="item.myth"
       :answer="item.true_or_false"
@@ -15,7 +15,6 @@ import Question from "./Question.vue";
 export default {
   name: "QuestionList",
   props: {
-    questions: Array,
     mythData: Array
   },
   components: {

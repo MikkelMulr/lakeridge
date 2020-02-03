@@ -1,17 +1,20 @@
 <template>
-  <div id="Home">
-    <h2>LakeRidge Home</h2>
-    <router-link :to="{name: 'Browse', props: { } }">Browse Myths</router-link>
+  <div id="Browse">
+    <h2>Myths</h2>
+    <QuestionList :mythData="this.myths" />
   </div>
 </template>
 
 <script>
+import QuestionList from "./QuestionList";
 import axios from "axios";
 
 export default {
-  name: "Home",
+  name: "Browse",
   props: {},
-  components: {},
+  components: {
+    QuestionList
+  },
   data() {
     return {
       myths: null
