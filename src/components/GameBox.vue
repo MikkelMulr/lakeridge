@@ -1,8 +1,7 @@
 <template>
-  <div id="Home">
-    <h2>LakeRidge Home</h2>
-    <router-link :to="{name: 'Browse', props: { } }">Browse Myths</router-link>
-    <router-link :to="{name: 'GameBox', props: { } }">Play Game</router-link>
+  <div id="Browse">
+    <h2>Myths</h2>
+    <QuestionList :mythData="this.myths" />
   </div>
 </template>
 
@@ -10,9 +9,11 @@
 import axios from "axios";
 
 export default {
-  name: "Home",
+  name: "GameBox",
   props: {},
-  components: {},
+  components: {
+    
+  },
   data() {
     return {
       myths: null
