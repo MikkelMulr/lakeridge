@@ -67,13 +67,13 @@
       "id": 4,
       "myth_title": "Are trials only for patients who are out of options?",
       "bubbles": [
-        "First message goes here", 
-        "Oh, this is the second message", 
+        "First message goes here",
+        "Oh, this is the second message",
         "Should we ask the question now?"
       ],
       "answers": {
         "true": "The right choice",
-        "false": "The wring choice"
+        "false": "The wrong choice"
       },
       "facts": {
         "fact_title": "In some cases trials are a last resort.",
@@ -88,10 +88,14 @@
     {
       "id": 5,
       "myth_title": "Will I get same quality of care during a trial?",
-      "bubbles": ["First message goes here", "Oh, this is the second message", "Should we ask the question now?"],
+      "bubbles": [
+        "First message goes here",
+        "Oh, this is the second message",
+        "Should we ask the question now?"
+      ],
       "answers": {
         "true": "The right choice",
-        "false": "The wring choice"
+        "false": "The wrong choice"
       },
       "facts": {
         "fact_title": "All patients in clinical trials recieve a high standard of care.",
@@ -106,10 +110,14 @@
     {
       "id": 6,
       "myth_title": "Are clinical trials dangerous?",
-      "bubbles": ["First message goes here", "Oh, this is the second message", "Should we ask the question now?"],
+      "bubbles": [
+        "First message goes here",
+        "Oh, this is the second message",
+        "Should we ask the question now?"
+      ],
       "answers": {
         "true": "The right choice",
-        "false": "The wring choice"
+        "false": "The wrong choice"
       },
       "facts": {
         "fact_title": "Safeguards are in place to protect the patients and minimize the risks.",
