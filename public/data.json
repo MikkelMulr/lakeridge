@@ -2,15 +2,19 @@
   "myths": [{
       "id": 1,
       "myth_title": "Are participants treated human guinea pigs?",
-      "bubbles": ["First message goes here", "Oh, this is the second message", "Should we ask the question now?"],
+      "bubbles": [
+        "My brother is thinking of participating in a clinical trial",
+        "Oh, but I heard that they just use people as guinea pigs for the tests...",
+        "So, what do you think? Should he do it??"
+      ],
       "answers": {
-        "true": "The right choice",
-        "false": "The wring choice"
+        "true": "Sure. I think you should discuss with his doctor and do it!",
+        "false": "It is scary. He should't"
       },
       "facts": {
-        "fact_title": "Actually, participants are never treated as guinea pigs.",
+        "fact_title": "Participants are never treated as guinea pigs.",
         "fact_list": [
-          "Before any human is administered clinical trial medication or treatments, they will have undergone very extensive research and testing to make it as safe as possible.",
+          "Before any patient is administered clinical trial medication or treatments, they will have undergone very extensive research and testing to make it as safe as possible.",
           "All trials are carefully designed to have safeguards and protocols to protect the participants.",
           "Clinical trials incorporate the best available treatment in most cases."
         ]
@@ -20,10 +24,14 @@
     {
       "id": 2,
       "myth_title": "Does every trial use placebo?",
-      "bubbles": ["First message goes here", "Oh, this is the second message", "Should we ask the question now?"],
+      "bubbles": [
+        "So she started her clinical trial last week",
+        "Really? How's she doing?",
+        "Seems to be working, but I think it's all fake"
+      ],
       "answers": {
-        "true": "The right choice",
-        "false": "The wring choice"
+        "true": "No It's not. Like they do research and stuff for the new medicine.",
+        "false": "Yeah, I think they just give them sugar pills and expect them to get better."
       },
       "facts": {
         "fact_title": "Not every trial uses placebo.",
@@ -37,16 +45,19 @@
     {
       "id": 3,
       "myth_title": "Will my doctor tell me about available trials?",
-      "bubbles": ["First message goes here", "Oh, this is the second message", "Should we ask the question now?"],
+      "bubbles": [
+        "So I am getting the same treatment for months now and it is not getting better",
+        "Ask your doctor if there is any other treatment or something"
+      ],
       "answers": {
-        "true": "The right choice",
-        "false": "The wring choice"
+        "true": "Yeah they mentioned some clinical trial that is going on",
+        "false": "I asked them and they didn't know of anything new"
       },
       "facts": {
-        "fact_title": "It is possible that your doctor will tell you about available trials.",
+        "fact_title": "It is possible that your doctor will tell you about any available trials.",
         "fact_list": [
-          "There are over 1000 oncology clinical trials going on at all times, so your doctor may not be aware of them all in order to be able to recommend one to you",
-          "However, If your doctor is aware of a clinical trial that may be a fit for your personal situation they may choose to tell you about it.",
+          "There are over 1000 oncology clinical trials going on at all times, so your doctor may not be aware of them all in order to be able to recommend one to you.",
+          "However, if your doctor is aware of a clinical trial that may be a fit for your personal situation they may choose to tell you about it.",
           "While clinical trials may be the correct path for some, it is not always the correct route for a patient to take."
         ]
       },
@@ -55,7 +66,11 @@
     {
       "id": 4,
       "myth_title": "Are trials only for patients who are out of options?",
-      "bubbles": ["First message goes here", "Oh, this is the second message", "Should we ask the question now?"],
+      "bubbles": [
+        "First message goes here", 
+        "Oh, this is the second message", 
+        "Should we ask the question now?"
+      ],
       "answers": {
         "true": "The right choice",
         "false": "The wring choice"
@@ -64,7 +79,7 @@
         "fact_title": "In some cases trials are a last resort.",
         "fact_list": [
           "Many times participating in a clinical trial can offer an adjustment or addition to a standard treatment plan already perscribed to a patient with potential benefits.",
-          "Although, there are occurences of patients being admitted to a trial after they have exhaused other options.",
+          "Although, there are occurences of patients being admitted to a trial after they have exhaused other options. It still does not guarantee improvements in participant's condition.",
           "Trials do not always apply just to patients who are affected by a disease. Some trials are geared towards patients who are at risk, in remission, or to research methods to detect or diagnose cancer."
         ]
       },
