@@ -7,7 +7,7 @@
 		<section>
 			<router-link class="playButton button" :to="{name: 'GameBox', props: { } }">Play Game</router-link>
 		</section>
-		<!-- <br /> -->
+		<br />
 		<div>
 			<router-link class="skipButton button" :to="{name: 'Browse', props: { } }">Browse Myths</router-link>
 		</div>
