@@ -1,6 +1,5 @@
 <template>
   <div id="Browse">
-    <h2>Myths</h2>
     <QuestionList :mythData="this.myths" />
   </div>
 </template>
@@ -28,4 +27,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+#Browse {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 </style>

@@ -1,34 +1,24 @@
 <template>
-	<div id="Home">
-		<div>
+	<main id="Home">
+		<section>
 			<h1>LAKERIDGE HEALTH</h1>
 			<h2>MYTHS VS FACTS</h2>
-		</div>
-		<div>
+		</section>
+		<section>
 			<router-link class="playButton button" :to="{name: 'GameBox', props: { } }">Play Game</router-link>
-		</div>
-		<br />
+		</section>
+		<!-- <br /> -->
 		<div>
 			<router-link class="skipButton button" :to="{name: 'Browse', props: { } }">Browse Myths</router-link>
 		</div>
-	</div>
+	</main>
 </template>
 
 <script>
-	import axios from "axios";
-
 	export default {
 		name: "Home",
 		props: {},
-		components: {},
-		data() {
-			return {
-				myths: null
-			};
-		},
-		created() {
-			axios.get("./data.json").then(response => (this.myths = response));
-		}
+		components: {}
 	};
 </script>
 

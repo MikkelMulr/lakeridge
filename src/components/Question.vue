@@ -1,6 +1,7 @@
 <template>
   <div class="Question">
-    <h4>{{myth}}</h4>
+    <h4>{{mythData.myth_title}}</h4>
+    <div class="true" v-on:click="nextEvent">True</div>
   </div>
 </template>
 
@@ -8,8 +9,8 @@
 export default {
   name: "Question",
   props: {
-    myth: String,
-    answer: Boolean
+    mythData: Object,
+    nextEvent: Function
   }
 };
 </script>
