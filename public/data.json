@@ -1,7 +1,7 @@
 {
   "myths": [{
       "id": 1,
-      "myth_title": "Are participants treated as human guinea pigs?",
+      "myth_title": "Are the participants treated as human guinea pigs?",
       "bubbles": [
         "My brother is thinking of participating in a clinical trial",
         "Oh, but I heard that they just use people as guinea pigs for the tests...",
@@ -16,7 +16,7 @@
         "fact_list": [
           "Before any patient is administered clinical trial medication or treatments, they will have undergone very extensive research and testing to make it as safe as possible.",
           "All trials are carefully designed to have safeguards and protocols to protect the participants.",
-          "Clinical trials incorporate the best available treatment in most cases."
+          "Clinical trials incorporate the best available treatment for the particular diseases."
         ]
       },
       "art": "./link-to-the-illustration"
