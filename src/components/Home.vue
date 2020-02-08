@@ -1,9 +1,16 @@
 <template>
 	<div id="Home">
-		<h2>LakeRidge Home</h2>
-		<router-link class="playButton button" :to="{name: 'GameBox', props: { } }">Play Game</router-link>
+		<div>
+			<h1>LAKERIDGE HEALTH</h1>
+			<h2>MYTHS VS FACTS</h2>
+		</div>
+		<div>
+			<router-link class="playButton button" :to="{name: 'GameBox', props: { } }">Play Game</router-link>
+		</div>
 		<br />
-		<router-link class="skipButton button" :to="{name: 'Browse', props: { } }">Browse Myths</router-link>
+		<div>
+			<router-link class="skipButton button" :to="{name: 'Browse', props: { } }">Browse Myths</router-link>
+		</div>
 	</div>
 </template>
 
