@@ -1,9 +1,9 @@
 <template>
-	<main class="Question">
+	<main class="Device">
 		<header>
 			<img class="logo" src="../assets/images/lakeridge_logo.svg" alt="Logo" />
 		</header>
-		<section class="device">
+		<section class="device-inner">
 			<div class="marvel-device iphone-x">
 				<div class="notch">
 					<div class="camera"></div>
@@ -22,10 +22,6 @@
 				<div class="inner-shadow"></div>
 				<div class="screen">
 					<!-- Content goes here -->
-					<section class="speech-bubble">
-						<h4>{{mythData.myth_title}}</h4>
-					</section>
-					<button class="true" v-on:click="nextEvent">True</button>
 				</div>
 			</div>
 		</section>
@@ -34,18 +30,18 @@
 
 <script>
 	export default {
-		name: "Question",
-		props: {
-			mythData: Object,
-			nextEvent: Function
-		}
+		name: "Device"
+		// props: {
+		// 	mythData: Object,
+		// 	nextEvent: Function
+		// }
 	};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 	@import "../assets/styles/devices.min.css";
-	.device {
+	.device-inner {
 		width: 100vw;
 		display: flex;
 		flex-direction: row;
@@ -58,30 +54,6 @@
 		flex-direction: row;
 	}
 	.screen {
-		padding: 5vh;
-	}
-	.speech-bubble {
-		position: relative;
-		background: #c7c8ca;
-		border-radius: 0.8rem;
-		padding: 3rem;
-		font-size: 2rem;
-		text-align: left;
-		line-height: 2.15rem;
-	}
-
-	.speech-bubble:after {
-		content: "";
-		position: absolute;
-		left: 0;
-		top: 50%;
-		width: 0;
-		height: 0;
-		border: 2rem solid transparent;
-		border-right-color: #c7c8ca;
-		border-left: 0;
-		border-top: 0;
-		margin-top: -4rem;
-		margin-left: -1em;
+		padding-top: 5vh;
 	}
 </style>
