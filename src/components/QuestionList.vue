@@ -2,7 +2,7 @@
   <div id="QuestionList">
     <div class="CardView" v-if="this.viewState">
       <Information
-        :mythData="this.myths.data.myths[this.mythClicked]"
+        :mythData="mythData.data.myths[this.mythClicked]"
         :nextEvent="updateCurrentMyth"
       />
     </div>
@@ -26,7 +26,7 @@ import Information from "./Information";
 export default {
   name: "QuestionList",
   props: {
-    mythData: Array
+    mythData: Object
   },
   data() {
     return {
@@ -44,6 +44,7 @@ export default {
     },
     updateMythClicked: function(id) {
       this.mythClicked = id;
+      this.updateViewState();
     }
   }
 };
@@ -57,7 +58,7 @@ export default {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 80%;
-  width: 50%;
+  height: 100%;
+  width: 100%;
 }
 </style>

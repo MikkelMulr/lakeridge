@@ -16,7 +16,7 @@ export default {
   },
   data() {
     return {
-      myths: null
+      myths: {}
     };
   },
   created() {
