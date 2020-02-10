@@ -11,7 +11,6 @@
         v-for="(item) in mythData.data.myths"
         :key="item.id"
         :myth="item.myth_title"
-        :answer="item.true_or_false"
         :handleClick="updateViewState"
         v-on:click="updateMythClicked(item.id)"
       />

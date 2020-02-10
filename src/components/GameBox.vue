@@ -1,13 +1,17 @@
 <template>
-  <div id="Browse">
-    <div class="viewState" v-if="this.viewState">
+  <div id="GameBox">
+    <div class="viewState info" v-if="this.viewState">
       <Information
         :mythData="this.myths.data.myths[this.currentMyth]"
         :nextEvent="updateCurrentMyth"
       />
     </div>
-    <div class="viewState" v-else>
-      <Question :mythData="this.myths.data.myths[this.currentMyth]" :nextEvent="updateViewState" />
+    <div class="viewState question" v-else>
+      <Question
+        :testData="this.myths.data.myths"
+        :mythData="this.myths.data.myths[this.currentMyth]"
+        :nextEvent="updateViewState"
+      />
     </div>
   </div>
 </template>
@@ -48,4 +52,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.question {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 </style>

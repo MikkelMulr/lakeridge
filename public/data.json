@@ -1,60 +1,135 @@
 {
   "myths": [{
       "id": 1,
-      "myth_title": "Clinical Trials participants are human guinea pigs",
-      "true_or_false": false,
-      "facts": [
-        "Clinical trials incorporate the best available treatment",
-        "Before any human is administered clinical trial medication or treatments, they will have undergone very extensive research and testing to make it as safe as possible",
-        "Trials are carefully designed to have safeguards and protocols to ensure"
-      ]
+      "myth_title": "Are the participants treated as human guinea pigs?",
+      "bubbles": [
+        "My brother is thinking of participating in a clinical trial",
+        "Oh, but I heard that they just use people as guinea pigs for the tests...",
+        "So, what do you think? Should he do it??"
+      ],
+      "answers": {
+        "true": "Sure. I think you should discuss with his doctor and do it!",
+        "false": "It is scary. He should't"
+      },
+      "facts": {
+        "fact_title": "Participants are never treated as guinea pigs.",
+        "fact_list": [
+          "This is a very common misconception. All clinical trials are carefully designed to have safeguards and protocols to protect the participants.",
+          "Before any patient is administered clinical trial medication or treatments, they will have undergone very extensive research and testing to make it as safe as possible.",
+          "Clinical trials incorporate the best available treatment for the particular diseases."
+        ]
+      },
+      "art": "./link-to-the-illustration"
     },
     {
       "id": 2,
-      "myth_title": "Every trial uses a placebo as a comparison",
-      "true_or_false": false,
-      "facts": [
-        "Placebos are rarely used in serious illnesses such as cancer",
-        "Placebos are only used in cases where a treatment has not been established for an illness, in order to create a baseline for comparison"
-      ]
+      "myth_title": "Does every trial use placebo?",
+      "bubbles": [
+        "So she started her clinical trial last week",
+        "Really? How's she doing?",
+        "Seems to be working, but I think it's all fake"
+      ],
+      "answers": {
+        "true": "No It's not. Like they do research and stuff for the new medicine.",
+        "false": "Yeah, I think they just give them sugar pills and expect them to get better."
+      },
+      "facts": {
+        "fact_title": "Not every trial uses placebo.",
+        "fact_list": [
+          "Placebos are substances that are made to resemble drugs but do not contain an active drug but are made of an inactive substance, such as a starch or sugar.",
+          "However, Placebos are rarely used in serious illnesses such as cancer.",
+          "Placebos are only used in cases where a treatment has not been established for an illness, in order to create a baseline for comparison. This tells researchers whether the new treatment is effective."
+        ]
+      },
+      "art": "./link-to-the-illustration"
     },
     {
       "id": 3,
-      "myth_title": "If there is a clinical trial that could help me, my doctor will tell me about it",
-      "true_or_false": true,
-      "facts": [
-        "If your doctor is aware of a clinical trial that may be a fit for your personal situation they may choose to tell you about it",
-        "There are over 1000 oncology clinical trials going on at all times, so your doctor may not be aware of them all in order to be able to recommend one to you",
-        "While clinical trials may be the correct path for some, it is not always the correct route for a patient to take"
-      ]
+      "myth_title": "Will my doctor tell me about available trials?",
+      "bubbles": [
+        "So I am getting the same treatment for months now and it is not getting better",
+        "Ask your doctor if there is any other treatment or something"
+      ],
+      "answers": {
+        "true": "Yeah they mentioned some clinical trial that is going on",
+        "false": "I asked them and they didn't know of anything new"
+      },
+      "facts": {
+        "fact_title": "It is possible that your doctor will tell you about any available trials.",
+        "fact_list": [
+          "There are over 1000 oncology clinical trials going on at all times, so your doctor may not be aware of them all in order to be able to recommend one to you.",
+          "However, if your doctor is aware of a clinical trial that may be a fit for your personal situation they may choose to tell you about it.",
+          "While clinical trials may be the correct path for some, it is not always the correct route for a patient to take."
+        ]
+      },
+      "art": "./link-to-the-illustration"
     },
     {
       "id": 4,
-      "myth_title": "Clinical trials are for patients who have run out of options",
-      "true_or_false": false,
-      "facts": [
-        "Although there are occurences of patients being admitted to a trial after they have exhaused other options, many times participating in a CT can offer an adjustment/ addition to a standard treatment plan already perscribed to a patient with potential benefits.",
-        "Trials do not always apply just to patients who are already, or currently afflicated by a disease/ illness. Some trials are geared towards patients who are at risk, or in remission."
-      ]
+      "myth_title": "Are trials only for patients who are out of options?",
+      "bubbles": [
+        "First message goes here",
+        "Oh, this is the second message",
+        "Should we ask the question now?"
+      ],
+      "answers": {
+        "true": "The right choice",
+        "false": "The wrong choice"
+      },
+      "facts": {
+        "fact_title": "In some cases trials are a last resort.",
+        "fact_list": [
+          "Many times participating in a clinical trial can offer an adjustment or addition to a standard treatment plan already prescribed to a patient with potential benefits.",
+          "Although, there are occurences of patients being admitted to a trial after they have exhausted other options. It still does not guarantee improvements in participant's condition.",
+          "Trials do not always apply just to patients who are affected by a disease. Some trials are geared towards patients who are at risk, in remission, or to research methods to detect or diagnose cancer."
+        ]
+      },
+      "art": "./link-to-the-illustration"
     },
     {
       "id": 5,
-      "myth_title": "If I join a clinical trial, I won't receieve the same quality of care that I currently have with my doctor",
-      "true_or_false": false,
-      "facts": [
-        "All participants in clinical trials recieve a high level of care and are encouraged to discuss any thoughts or worries with the CT staff",
-        "Research shows that participants in clinical trials show more positive results in similar stages of their respective ailments than those who only recieve standard treatments."
-      ]
+      "myth_title": "Will I get the same quality of care during a trial?",
+      "bubbles": [
+        "First message goes here",
+        "Oh, this is the second message",
+        "Should we ask the question now?"
+      ],
+      "answers": {
+        "true": "The right choice",
+        "false": "The wrong choice"
+      },
+      "facts": {
+        "fact_title": "All patients in clinical trials recieve a high standard of care.",
+        "fact_list": [
+          "Patients enrolled in a trial are encouraged to continue care with their regular care provider and discuss any thoughts or worries with the trial staff.",
+          "By having his or her usual health care provider work with the research team, a participant can make sure that the study protocol will not conflict with other medications or treatments that they receive",
+          "Research shows that participants in clinical trials show more positive results in similar stages of their disease than those who only receive standard treatments."
+        ]
+      },
+      "art": "./link-to-the-illustration"
     },
     {
       "id": 6,
-      "myth_title": "CTs are dangerous because they use new practices and medicines / Clinical trials may include painful or unpleasant parts",
-      "true_or_false": true,
-      "facts": [
-        "All clinical trials carry their own level of risks and it is up to the patient and their doctor to decide if those risks are worth taking",
-        "The Reaearch Ethical Board (REB) will also ensure that the benefits and risks are carefully weighed and that the trial is reviewed for unnecessary harm or discomfort before it starts",
-        "participants recieve reguard and careful medical attention and are closely monitored for safety concerns"
-      ]
+      "myth_title": "Are clinical trials dangerous? Are the trials unpleasant?",
+      "bubbles": [
+        "First message goes here",
+        "Oh, this is the second message",
+        "Should we ask the question now?"
+      ],
+      "answers": {
+        "true": "The right choice",
+        "false": "The wrong choice"
+      },
+      "facts": {
+        "fact_title": "Safeguards are in place to protect the patients and minimize the risks.",
+        "fact_list": [
+          "The Research Ethical Board (REB) ensures that the benefits and risks are carefully weighed and that the trial is reviewed for unnecessary harm or discomfort before it starts. Health Canada also oversees the trials.",
+          "Participants receive regular and careful medical attention and are closely monitored for safety concerns.",
+          "Any side effects during a trial must be reported to the REB and Health canada and may stop a trial until it is understood how they are properly dealt with.",
+          "All clinical trials carry their own level of risks and it is up to the patient and their doctor to decide if those risks are worth taking."
+        ]
+      },
+      "art": "./link-to-the-illustration"
     }
   ]
 }
