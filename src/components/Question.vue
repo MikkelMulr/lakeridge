@@ -84,4 +84,11 @@
 		margin-top: -4rem;
 		margin-left: -1em;
 	}
+	.true {
+		padding: 1rem 0 0 3rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
 </style>
