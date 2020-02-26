@@ -1,9 +1,11 @@
+// This component is where the overall game is housed, containing everything required to play the game mode
 <template>
   <div id="GameBox">
     <div class="viewState info" v-if="this.viewState">
       <Information
         :mythData="this.myths.data.myths[this.currentMyth]"
         :nextEvent="updateCurrentMyth"
+        :viewType="'game'"
       />
     </div>
     <div class="viewState question" v-else>

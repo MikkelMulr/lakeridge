@@ -1,10 +1,13 @@
+// This component is used to display the myth (chat bubbles) to the user while in game mode
 <template>
   <div class="Question">
-    <!-- <h4>{{mythData.myth_title}}</h4> -->
     <div class="bubble" v-for="(item) in mythData.bubbles" :key="item.id">
       <p>{{item}}</p>
     </div>
-    <div class="nextBtn" v-on:click="nextEvent">Next Myth</div>
+    <div class="choices">
+      <div class="nextBtn" v-on:click="nextEvent">Fact</div>
+      <div class="nextBtn" v-on:click="nextEvent">Myth</div>
+    </div>
   </div>
 </template>
 
@@ -48,7 +51,21 @@ p {
 }
 
 .nextBtn {
+  font-size: 2rem;
+  padding: 2rem;
+  height: 60px;
+  width: 40%;
   color: #fff;
+  background-color: rgb(92, 145, 161);
+  cursor: pointer;
+}
+
+.choices {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 @keyframes appear {

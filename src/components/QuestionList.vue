@@ -3,17 +3,19 @@
     <div class="CardView" v-if="this.viewState">
       <Information
         :mythData="mythData.data.myths[this.mythClicked]"
-        :nextEvent="updateCurrentMyth"
+        :returnTo="updateViewState"
+        :viewType="'browse'"
       />
     </div>
     <div class="CardView" v-else>
       <QuestionCard
         v-for="(item) in mythData.data.myths"
         :key="item.id"
+        :id="item.id"
         :myth="item.myth_title"
-        :handleClick="updateViewState"
-        v-on:click="updateMythClicked(item.id)"
+        :handleClick="updateMythClicked"
       />
+      <router-link :to="{name: 'Home', props: { } }">Return to menu</router-link>
     </div>
   </div>
 </template>
@@ -21,6 +23,7 @@
 <script>
 import QuestionCard from "./QuestionCard.vue";
 import Information from "./Information";
+// v-on:click="updateMythClicked(item.id)"
 
 export default {
   name: "QuestionList",
