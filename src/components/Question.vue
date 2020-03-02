@@ -23,11 +23,15 @@
 					<div class="bubble" v-for="(item) in mythData.bubbles" :key="item.id">
 						<p>{{item}}</p>
 					</div>
-					<div class="choices">
-						<div class="nextBtn" v-on:click="nextEvent">Fact</div>
-						<div class="nextBtn" v-on:click="nextEvent">Myth</div>
-					</div>
 				</div>
+			</div>
+		</section>
+		<section class="question-side">
+			<h1>{{mythData.myth_title}}</h1>
+			<h2>If you were in this situation, how would you respond?</h2>
+			<div class="choices">
+				<div class="nextBtn" v-on:click="nextEvent">Fact</div>
+				<div class="nextBtn" v-on:click="nextEvent">Myth</div>
 			</div>
 		</section>
 	</main>
@@ -51,10 +55,11 @@
 		height: 90vh;
 		width: 100vw;
 		overflow: hidden;
+		display: flex;
 	}
 
 	.device {
-		width: 100vw;
+		width: 50vw;
 		height: 100%;
 		max-height: 90vh;
 		display: flex;
@@ -79,21 +84,19 @@
 		color: #fff;
 		/* width: 70%; */
 		height: auto;
-		border-radius: 3.5rem;
+		border-radius: 2.5rem;
 		padding: 3rem;
 		margin: 1rem 0;
-		font-size: 2rem;
+		font-size: 2.5rem;
 		text-align: left;
-		line-height: 2.15rem;
+		line-height: 1.5em;
 	}
 
 	.bubble:nth-child(even) p {
-		/* background-color: rgb(92, 145, 161); */
 		background-color: #27aae1;
 	}
 
 	.bubble:nth-child(odd) p {
-		/* background-color: #aaa; */
 		background-color: #c7c8ca;
 	}
 
@@ -105,7 +108,7 @@
 		color: #fff;
 		background-color: rgb(92, 145, 161);
 		cursor: pointer;
-		border-radius: 10rem;
+		border-radius: 2.5rem;
 	}
 
 	.choices {
@@ -114,6 +117,8 @@
 		flex-direction: row;
 		justify-content: space-around;
 		align-items: center;
+		justify-self: center;
+		padding-top: 12em;
 	}
 
 	@keyframes appear {
@@ -124,5 +129,29 @@
 		100% {
 			transform: translateY(10rem);
 		}
+	}
+
+	.question-side {
+		width: 50vw;
+		height: 100vh;
+		border-left: 0.25rem solid #9f9f9f;
+		display: flex;
+		flex-direction: column;
+		/* justify-content: space-between; */
+		/* align-items: center; */
+	}
+	h1 {
+		/* align-items: flex-start; */
+		font-size: 5rem;
+		font-weight: 500;
+		text-align: left;
+	}
+	h2 {
+		/* align-items: center; */
+		font-size: 3rem;
+		font-weight: 300;
+		text-align: left;
+
+		/* margin: 1rem 0; */
 	}
 </style>
