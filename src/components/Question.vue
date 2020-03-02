@@ -1,9 +1,6 @@
 // This component is used to display the myth (chat bubbles) to the user while in game mode
 <template>
   <main class="Question">
-    <!-- <header>
-      <img class="logo" src="../assets/images/lakeridge_logo.svg" alt="Logo" />
-    </header>-->
     <section class="device">
       <div class="marvel-device iphone-x">
         <div class="notch">
@@ -30,8 +27,8 @@
             <p>{{item}}</p>
           </div>
           <div class="choices">
-            <div class="nextBtn" v-on:click="nextEvent">Fact</div>
-            <div class="nextBtn" v-on:click="nextEvent">Myth</div>
+            <div class="nextBtn" v-on:click="nextEvent">{{buttons.true}}</div>
+            <div class="nextBtn" v-on:click="nextEvent">{{buttons.false}}</div>
           </div>
         </div>
       </div>
@@ -44,7 +41,8 @@ export default {
   name: "Question",
   props: {
     mythData: Object,
-    nextEvent: Function
+    nextEvent: Function,
+    buttons: Object
   }
 };
 </script>
