@@ -107,7 +107,7 @@
 		justify-content: center;
 		align-items: center;
 		font-weight: 700;
-		box-shadow: 0.2rem 0.2rem 0.6rem #000000;
+		box-shadow: 0.1rem 0.1rem 0.3rem #242323;
 	}
 
 	.playButton:hover {

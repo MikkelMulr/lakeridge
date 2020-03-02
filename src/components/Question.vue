@@ -122,15 +122,15 @@
 		flex-wrap: wrap;
 	}
 	/* .Question {
-			width: 25vw;
-			height: 500px;
-			background: #111;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-around;
-			align-items: center;
-			animation: appear 0.8s ease-out;
-		} */
+				width: 25vw;
+				height: 500px;
+				background: #111;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				align-items: center;
+				animation: appear 0.8s ease-out;
+			} */
 
 	p {
 		padding: 1rem;
