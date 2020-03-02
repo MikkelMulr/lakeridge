@@ -67,6 +67,11 @@
 
 	.screen {
 		padding: 5vh;
+		overflow: scroll;
+	}
+
+	.screen::-webkit-scrollbar {
+		display: none;
 	}
 
 	p {
