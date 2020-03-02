@@ -2,19 +2,20 @@
   <div id="QuestionList">
     <div class="CardView" v-if="this.viewState">
       <Information
-        :mythData="this.myths.data.myths[this.mythClicked]"
-        :nextEvent="updateCurrentMyth"
+        :mythData="mythData.data.myths[this.mythClicked]"
+        :returnTo="updateViewState"
+        :viewType="'browse'"
       />
     </div>
     <div class="CardView" v-else>
       <QuestionCard
         v-for="(item) in mythData.data.myths"
         :key="item.id"
+        :id="item.id"
         :myth="item.myth_title"
-        :answer="item.true_or_false"
-        :handleClick="updateViewState"
-        v-on:click="updateMythClicked(item.id)"
+        :handleClick="updateMythClicked"
       />
+      <router-link :to="{name: 'Home', props: { } }">Return to menu</router-link>
     </div>
   </div>
 </template>
@@ -22,11 +23,12 @@
 <script>
 import QuestionCard from "./QuestionCard.vue";
 import Information from "./Information";
+// v-on:click="updateMythClicked(item.id)"
 
 export default {
   name: "QuestionList",
   props: {
-    mythData: Array
+    mythData: Object
   },
   data() {
     return {
@@ -44,6 +46,7 @@ export default {
     },
     updateMythClicked: function(id) {
       this.mythClicked = id;
+      this.updateViewState();
     }
   }
 };
@@ -57,7 +60,7 @@ export default {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 80%;
-  width: 50%;
+  height: 100%;
+  width: 100%;
 }
 </style>

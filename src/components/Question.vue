@@ -1,3 +1,4 @@
+// This component is used to display the myth (chat bubbles) to the user while in game mode
 <template>
 	<main class="Question">
 		<header>
@@ -22,6 +23,14 @@
 				<div class="inner-shadow"></div>
 				<div class="screen">
 					<!-- Content goes here -->
+					<div class="bubble" v-for="(item) in mythData.bubbles" :key="item.id">
+						<p>{{item}}</p>
+					</div>
+					<div class="choices">
+						<div class="nextBtn" v-on:click="nextEvent">Fact</div>
+						<div class="nextBtn" v-on:click="nextEvent">Myth</div>
+					</div>
+
 					<section class="speech-bubble">
 						<h4>{{mythData.myth_title}}</h4>
 					</section>
@@ -40,6 +49,26 @@
 			nextEvent: Function
 		}
 	};
+	//   <div class="Question">
+	//     <div class="bubble" v-for="(item) in mythData.bubbles" :key="item.id">
+	//       <p>{{item}}</p>
+	//     </div>
+	//     <div class="choices">
+	//       <div class="nextBtn" v-on:click="nextEvent">Fact</div>
+	//       <div class="nextBtn" v-on:click="nextEvent">Myth</div>
+	//     </div>
+	//   </div>
+	// </template>
+
+	// <script>
+	// export default {
+	//   name: "Question",
+	//   props: {
+	//     mythData: Object,
+	//     nextEvent: Function,
+	//     testData: Object
+	//   }
+	// };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -51,9 +80,10 @@
 		flex-direction: row;
 		justify-content: center;
 		margin-top: -1vh;
+		animation: appear 0.8s ease-out;
 	}
 	.logo {
-		padding: 1rem 0 0 3rem;
+		padding: 0.5rem 0 0 3rem;
 		display: flex;
 		flex-direction: row;
 	}
@@ -90,5 +120,58 @@
 		flex-direction: row;
 		justify-content: center;
 		flex-wrap: wrap;
+	}
+	/* .Question {
+			width: 25vw;
+			height: 500px;
+			background: #111;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			animation: appear 0.8s ease-out;
+		} */
+
+	p {
+		padding: 1rem;
+		color: #fff;
+		width: 70%;
+		height: auto;
+	}
+
+	.bubble:nth-child(even) p {
+		background-color: rgb(92, 145, 161);
+	}
+
+	.bubble:nth-child(odd) p {
+		background-color: #aaa;
+	}
+
+	.nextBtn {
+		font-size: 2rem;
+		padding: 2rem;
+		height: 60px;
+		width: 40%;
+		color: #fff;
+		background-color: rgb(92, 145, 161);
+		cursor: pointer;
+	}
+
+	.choices {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	@keyframes appear {
+		0% {
+			transform: translateY(500px);
+		}
+
+		100% {
+			transform: translateY(10rem);
+		}
 	}
 </style>

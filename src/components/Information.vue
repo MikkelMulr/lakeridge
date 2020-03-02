@@ -1,5 +1,8 @@
+// This component serves 2 purposes:
+// 1 - display Myth "facts" after a user (while in game mode) has clicked their "answer" to a myth scenario
+// 2 - display Myth information respective to the myth card that is selected while in browse mode
 <template>
-	<main id="Information">
+	<!-- <main id="Information" v-if="viewType == 'browse'">
 		<header>
 			<img class="logo" src="../assets/images/lakeridge_logo.svg" alt="Logo" />
 		</header>
@@ -21,7 +24,8 @@
 				</div>
 				<div class="inner-shadow"></div>
 				<div class="screen">
-					<!-- Content goes here -->
+					Content goes here
+
 					<section class="speech-bubble">
 						<h2>{{mythData.myth_title}}</h2>
 					</section>
@@ -30,15 +34,35 @@
 				</div>
 			</div>
 		</section>
-	</main>
+	</main>-->
+	<div id="Information" v-if="viewType == 'browse'">
+		<h2>{{mythData.myth_title}}</h2>
+		<p>{{mythData.fact_title}}</p>
+		<div class="facts" v-for="(item) in mythData.facts.fact_list" :key="item">
+			<p class="fact">{{item}}</p>
+		</div>
+		<div class="Information--nextBtn" v-on:click="returnTo">Back to Myths</div>
+	</div>
+	<div id="Information" v-else>
+		<h2>{{mythData.myth_title}}</h2>
+		<p>{{mythData.fact_title}}</p>
+		<div class="facts" v-for="(item) in mythData.facts.fact_list" :key="item">
+			<p class="fact">{{item}}</p>
+		</div>
+		<div class="Information--nextBtn" v-on:click="nextEvent">Next</div>
+	</div>
 </template>
 
 <script>
+	// <router-link :to="{name: 'Home', props: { } }">Exit Game</router-link>
+
 	export default {
 		name: "Information",
 		props: {
 			mythData: Object,
-			nextEvent: { type: Function }
+			returnTo: { type: Function },
+			nextEvent: { type: Function },
+			viewType: String
 		},
 		components: {}
 	};
@@ -86,5 +110,20 @@
 		border-top: 0;
 		margin-top: -5rem;
 		margin-right: -2em;
+	}
+	.facts {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.fact {
+		width: 50%;
+		height: auto;
+		padding: 1rem;
+		background-color: #ddd;
+		color: #000;
 	}
 </style>

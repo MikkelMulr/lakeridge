@@ -31,5 +31,6 @@
 		color: #231f20;
 		/* To be deleted */
 		background: #c7c8ca;
+		overflow-x: hidden;
 	}
 </style>

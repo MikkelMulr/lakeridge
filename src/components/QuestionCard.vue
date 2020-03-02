@@ -1,6 +1,6 @@
 <template>
-  <div class="QuestionCard">
-    <h4 v-on:click="handleClick">{{myth}}</h4>
+  <div class="QuestionCard" v-on:click="handleClick(id - 1)">
+    <h4>{{myth}}</h4>
   </div>
 </template>
 
