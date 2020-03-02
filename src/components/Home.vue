@@ -1,128 +1,127 @@
 <template>
-  <main id="home">
-    <section class="home-first-half">
-      <header>
-        <img class="logo" src="../assets/images/lakeridge_logo.svg" alt="Logo" />
-      </header>
-      <section class="home-headings">
-        <h1>LAKERIDGE HEALTH</h1>
-        <h2>MYTHS VS FACTS</h2>
-      </section>
-    </section>
+	<main id="home">
+		<header>
+			<img class="logo" src="../assets/images/lakeridge_logo.svg" alt="Logo" />
+			<nav>
+				<ul>
+					<li>Home</li>
+					<li>
+						<router-link :to="{name: 'Browse', props: { } }">Browse Myths</router-link>
+					</li>
+					<li>Resources</li>
+				</ul>
+			</nav>
+		</header>
+		<section class="home-headings">
+			<p class="home-para">Know the facts behind</p>
+			<p>the common myths of</p>
+			<h1>Clinical Trials</h1>
+		</section>
 
-    <section class="home-second-half">
-      <section>
-        <router-link class="playButton button" :to="{name: 'GameBox', props: { } }">Let's Go</router-link>
-        <p class="button-tag-line">Play a trivia game about myths</p>
-        <!-- </section>
-        <section>-->
-        <router-link class="skipButton button" :to="{name: 'Browse', props: { } }">Browse Myths</router-link>
-        <p class="button-tag-line">Read the facts of clinical trials</p>
-      </section>
-    </section>
-  </main>
+		<section class="play">
+			<router-link class="playButton button" :to="{name: 'GameBox', props: { } }">Let's Go</router-link>
+		</section>
+		<section class="hex"></section>
+		<footer>LakeRidge Health 2019</footer>
+	</main>
 </template>
 
 <script>
-export default {
-  name: "Home",
-  props: {},
-  components: {}
-};
+	export default {
+		name: "Home",
+		props: {},
+		components: {}
+	};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-#home {
-  display: flex;
-  flex-direction: row;
-}
-.home-first-half {
-  /* background-image: url(/images/bg.jpg); */
-  background-image: url(../assets/images/bg@2x.jpg);
-  background-size: cover;
-  background-position: top;
-  width: 50%;
-  height: 100vh;
-}
-.logo {
-  padding: 3rem;
-  display: flex;
-  flex-direction: row;
-}
-.home-headings {
-  display: flex;
-  flex-direction: row;
+	#home {
+		background: #c7c8ca;
+		width: 100vw;
+		height: 100vh;
+	}
+	header {
+		display: flex;
+		flex-direction: row;
+	}
 
-  flex-wrap: wrap;
-  padding: 18rem 0 0 10rem;
-}
-h1 {
-  align-items: center;
-  font-size: 10rem;
-  font-weight: 400;
-  text-align: left;
-  line-height: 8rem;
-}
-h2 {
-  font-size: 8rem;
-  font-weight: 400;
-}
-.button {
-  height: 12rem;
-  width: 45rem;
-  margin-bottom: 1vh;
-  font-size: 5rem;
-  text-transform: uppercase;
-  border-radius: 0.75rem;
-}
+	.logo {
+		padding: 3rem;
+	}
 
-.button-tag-line {
-  font-size: 2.2rem;
-  font-weight: 400;
-}
-.home-second-half {
-  width: 50%;
-  height: 100vh;
-  background-color: #fff;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.playButton {
-  color: #fff;
-  background: #fa9500;
-  text-decoration: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-weight: 700;
-  box-shadow: 0.2rem 0.2rem 0.6rem #000000;
-}
+	nav {
+		margin-left: auto;
+		font-size: 2.5rem;
+	}
 
-.playButton:hover {
-  /* border: solid 0.1rem #23aa4a; */
-  box-shadow: none;
-}
+	li {
+		list-style: none;
+		display: inline-block;
+		color: #231f20;
+		padding: 5rem 9rem 0rem 0.001rem;
+		text-decoration: none;
+	}
 
-.skipButton {
-  color: #44494d;
-  text-decoration: none;
-  border: solid 0.1rem #444a4d;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 8vh;
-  font-weight: 400;
-}
-.skipButton:hover {
-  border: none;
-  color: #fff;
-  background: #23aa4a;
-  box-shadow: 0.2rem 0.2rem 0.6rem #000000;
-}
+	li,
+	a,
+	:visited {
+		color: #231f20;
+		text-decoration: none;
+	}
+
+	.home-headings {
+		padding: 6rem 0;
+	}
+
+	h1 {
+		align-items: center;
+		font-size: 7rem;
+		font-weight: 400;
+		text-align: center;
+		line-height: 8rem;
+	}
+	p {
+		font-size: 4rem;
+		font-weight: 400;
+	}
+
+	.play {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.playButton {
+		height: 12rem;
+		width: 55rem;
+		font-size: 5rem;
+		text-transform: uppercase;
+		border-radius: 0.75rem;
+		color: #fff;
+		background: #fa9500;
+		text-decoration: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		font-weight: 700;
+		box-shadow: 0.2rem 0.2rem 0.6rem #000000;
+	}
+
+	.playButton:hover {
+		box-shadow: none;
+	}
+
+	.hex {
+		/* position: absolute; */
+		margin-left: -10rem;
+		margin-top: 32rem;
+		width: 20rem;
+		height: 20rem;
+		background: rgba(255, 255, 255, 0.308);
+		clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	}
 </style>
 
