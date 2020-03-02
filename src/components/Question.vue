@@ -65,13 +65,6 @@
 		overflow: hidden;
 	}
 
-	/* .logo {
-	  padding: 1rem;
-	  display: flex;
-	  flex-direction: row;
-	  align-items: center;
-	  justify-content: center;
-	} */
 	.screen {
 		padding: 5vh;
 	}
