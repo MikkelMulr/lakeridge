@@ -2,39 +2,6 @@
 // 1 - display Myth "facts" after a user (while in game mode) has clicked their "answer" to a myth scenario
 // 2 - display Myth information respective to the myth card that is selected while in browse mode
 <template>
-	<!-- <main id="Information" v-if="viewType == 'browse'">
-		<header>
-			<img class="logo" src="../assets/images/lakeridge_logo.svg" alt="Logo" />
-		</header>
-		<section class="device">
-			<div class="marvel-device iphone-x">
-				<div class="notch">
-					<div class="camera"></div>
-					<div class="speaker"></div>
-				</div>
-				<div class="top-bar"></div>
-				<div class="sleep"></div>
-				<div class="bottom-bar"></div>
-				<div class="volume"></div>
-				<div class="overflow">
-					<div class="shadow shadow--tr"></div>
-					<div class="shadow shadow--tl"></div>
-					<div class="shadow shadow--br"></div>
-					<div class="shadow shadow--bl"></div>
-				</div>
-				<div class="inner-shadow"></div>
-				<div class="screen">
-					Content goes here
-
-					<section class="speech-bubble">
-						<h2>{{mythData.myth_title}}</h2>
-					</section>
-					<button class="Information--nextBtn" v-on:click="nextEvent">Next</button>
-					<router-link :to="{name: 'Home', props: { } }">Exit Game</router-link>
-				</div>
-			</div>
-		</section>
-	</main>-->
 	<div id="Information" v-if="viewType == 'browse'">
 		<h2>{{mythData.myth_title}}</h2>
 		<p>{{mythData.fact_title}}</p>
