@@ -23,9 +23,6 @@
 				<div class="inner-shadow"></div>
 				<div class="screen">
 					<!-- Content goes here -->
-					<!-- <div class="bubble" v-for="(item) in mythData.bubbles" :key="item.id">
-						<p>{{item}}</p>
-					</div>-->
 					<div class="bubble" v-for="(item) in mythData.bubbles" :key="item.id">
 						<p>{{item}}</p>
 					</div>
@@ -52,21 +49,40 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 	@import "../assets/styles/devices.min.css";
+	.Question {
+		height: 100vh;
+		width: 100vw;
+		overflow: hidden;
+	}
 	.device {
 		width: 100vw;
+		height: 100%;
+		max-height: 100vh;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
+		/* align-items: flex-start;
+									align-self: flex-end;
+									justify-self: center; */
 		/* margin-top: -1vh; */
-		animation: appear 0.8s ease-out;
+		animation: appear 1s ease-in;
+		overflow: hidden;
 	}
+
 	.logo {
-		padding: 0.5rem 0 0 3rem;
+		padding: 1rem;
 		display: flex;
 		flex-direction: row;
+		align-items: center;
+		justify-content: center;
 	}
 	.screen {
 		padding: 5vh;
+		overflow: scroll;
+	}
+
+	.screen ::-webkit-scrollbar {
+		display: none;
 	}
 
 	p {
