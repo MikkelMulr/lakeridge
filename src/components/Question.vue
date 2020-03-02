@@ -1,9 +1,6 @@
 // This component is used to display the myth (chat bubbles) to the user while in game mode
 <template>
 	<main class="Question">
-		<header>
-			<img class="logo" src="../assets/images/lakeridge_logo.svg" alt="Logo" />
-		</header>
 		<section class="device">
 			<div class="marvel-device iphone-x">
 				<div class="notch">
@@ -23,9 +20,6 @@
 				<div class="inner-shadow"></div>
 				<div class="screen">
 					<!-- Content goes here -->
-					<!-- <div class="bubble" v-for="(item) in mythData.bubbles" :key="item.id">
-						<p>{{item}}</p>
-					</div>-->
 					<div class="bubble" v-for="(item) in mythData.bubbles" :key="item.id">
 						<p>{{item}}</p>
 					</div>
@@ -52,19 +46,25 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 	@import "../assets/styles/devices.min.css";
+
+	.Question {
+		height: 90vh;
+		width: 100vw;
+		overflow: hidden;
+	}
+
 	.device {
 		width: 100vw;
+		height: 100%;
+		max-height: 90vh;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-		/* margin-top: -1vh; */
+		align-items: flex-start;
 		animation: appear 0.8s ease-out;
+		overflow: hidden;
 	}
-	.logo {
-		padding: 0.5rem 0 0 3rem;
-		display: flex;
-		flex-direction: row;
-	}
+
 	.screen {
 		padding: 5vh;
 	}
