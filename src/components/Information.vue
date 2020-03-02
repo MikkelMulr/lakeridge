@@ -9,7 +9,7 @@
 			<p class="fact">{{item}}</p>
 		</div>
 		<div class="Information--nextBtn" v-on:click="returnTo">Back to Myths</div>
-	</div1>
+	</div>
 	<div id="Information" v-else>
 		<h2>{{mythData.myth_title}}</h2>
 		<p>{{mythData.fact_title}}</p>
