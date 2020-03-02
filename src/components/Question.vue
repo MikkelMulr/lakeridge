@@ -20,9 +20,7 @@
         <div class="inner-shadow"></div>
         <div class="screen">
           <!-- Content goes here -->
-          <!-- <div class="bubble" v-for="(item) in mythData.bubbles" :key="item.id">
-						<p>{{item}}</p>
-          </div>-->
+
           <div class="bubble" v-for="(item) in mythData.bubbles" :key="item.id">
             <p>{{item}}</p>
           </div>
@@ -69,13 +67,6 @@ export default {
   overflow: hidden;
 }
 
-/* .logo {
-  padding: 1rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-} */
 .screen {
   padding: 5vh;
 }
