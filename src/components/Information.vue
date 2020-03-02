@@ -90,7 +90,7 @@
 		width: 50%;
 		height: auto;
 		padding: 1rem;
-		background-color: #ddd;
+		background-color: #fff;
 		color: #000;
 	}
 </style>
