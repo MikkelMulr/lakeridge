@@ -117,6 +117,7 @@
 		flex-direction: row;
 		justify-content: space-around;
 		align-items: center;
+		align-content: stretch;
 		justify-self: center;
 		padding-top: 12em;
 	}
@@ -134,24 +135,21 @@
 	.question-side {
 		width: 50vw;
 		height: 100vh;
-		border-left: 0.25rem solid #9f9f9f;
 		display: flex;
 		flex-direction: column;
 		/* justify-content: space-between; */
 		/* align-items: center; */
 	}
 	h1 {
-		/* align-items: flex-start; */
+		align-items: stretch;
 		font-size: 5rem;
 		font-weight: 500;
-		text-align: left;
+		/* text-align: left; */
 	}
 	h2 {
 		/* align-items: center; */
 		font-size: 3rem;
 		font-weight: 300;
 		text-align: left;
-
-		/* margin: 1rem 0; */
 	}
 </style>
