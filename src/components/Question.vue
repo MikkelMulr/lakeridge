@@ -42,7 +42,8 @@
 		name: "Question",
 		props: {
 			mythData: Object,
-			nextEvent: Function
+			nextEvent: Function,
+			buttons: Object
 		}
 	};
 </script>

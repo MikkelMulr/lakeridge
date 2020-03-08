@@ -4,6 +4,7 @@ import VueRouter from 'vue-router';
 import Home from './components/Home';
 import Browse from './components/Browse';
 import GameBox from './components/GameBox';
+import Resources from './components/Resources';
 
 Vue.use(VueRouter);
 
@@ -13,7 +14,8 @@ const router = new VueRouter({
 	routes: [
 		{ path: '/', name: 'Home', component: Home },
 		{ path: '/browse', name: 'Browse', component: Browse },
-		{ path: '/play', name: 'GameBox', component: GameBox }
+		{ path: '/play', name: 'GameBox', component: GameBox },
+		{ path: '/resources', name: 'GameBox', component: Resources }
 	],
 	mode: 'history' //cuts some older browser support to fix issue where page refreshes on navigating between routes
 });

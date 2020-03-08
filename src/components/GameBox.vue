@@ -12,6 +12,7 @@
       <Question
         :testData="this.myths.data.myths"
         :mythData="this.myths.data.myths[this.currentMyth]"
+        :buttons="this.myths.data.myths[this.currentMyth].answers"
         :nextEvent="updateViewState"
       />
     </div>
