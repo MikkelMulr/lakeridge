@@ -2,14 +2,14 @@
 // 1 - display Myth "facts" after a user (while in game mode) has clicked their "answer" to a myth scenario
 // 2 - display Myth information respective to the myth card that is selected while in browse mode
 <template>
-	<div1 id="Information" v-if="viewType == 'browse'">
+	<div id="Information" v-if="viewType == 'browse'">
 		<h2>{{mythData.myth_title}}</h2>
 		<p>{{mythData.fact_title}}</p>
 		<div class="facts" v-for="(item) in mythData.facts.fact_list" :key="item">
 			<p class="fact">{{item}}</p>
 		</div>
 		<div class="Information--nextBtn" v-on:click="returnTo">Back to Myths</div>
-	</div1>
+	</div>
 	<div id="Information" v-else>
 		<h2>{{mythData.myth_title}}</h2>
 		<p>{{mythData.fact_title}}</p>
