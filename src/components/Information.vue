@@ -137,6 +137,36 @@
 		cursor: pointer;
 	}
 
+	/* Tablet View */ 
+
+	@media only screen and (max-width: 900px) {
+
+		#Information {
+			flex-direction: column;
+			padding-top: 20px;
+		}
+
+		.imgCont {
+			margin-top: 0px;
+			width: 100%;
+			padding: 0px 50px;
+		}
+
+		.infoCont {
+			width: 100%;
+		}
+
+		.infoCont h2 {
+			font-size: 30px;
+			font-weight: 900;
+		}
+
+		.imgCont {
+			order: -1;
+		}
+
+	}
+
 	/* Mobile View */
 
 	@media only screen and (max-width: 599px) {

@@ -58,14 +58,18 @@ li {
   text-decoration: none;
 }
 
-li, a,
-  :visited {
+li, a:visited {
     color: #231f20;
     text-decoration: none;
-  @media only screen and (max-width: 599px) {
-    .logo {
-      width: 70%;
-    }
+}
+    
+@media only screen and (max-width: 900px) {
+  .logo {
+    width: 70%;
+  }
+
+  li {
+    padding: 5rem 2rem 0rem 0.001rem;
   }
 }
 </style>
