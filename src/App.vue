@@ -2,16 +2,19 @@
 	<div id="app">
 		<Header />
 		<router-view />
+		<Footer />
 	</div>
 </template>
 
 <script>
 	import Header from "./components/Header";
+	import Footer from "./components/Footer";
 
 	export default {
 		name: "app",
 		components: {
-			Header
+			Header,
+			Footer
 		}
 	};
 </script>
@@ -35,8 +38,8 @@
 		text-align: center;
 		/* color: #2c3e50; */
 		color: #231f20;
-		/* To be deleted */
-		background: #c7c8ca;
+
+		background: #00baff;
 		overflow-x: hidden;
 	}
 </style>
