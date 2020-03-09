@@ -1,6 +1,10 @@
 <template>
+
   <header class="Header">
-    <img class="logo" src="../assets/images/lakeridge_logo.svg" alt="Logo" />
+    <router-link :to="{name: 'Home', props: { } }">
+      <img class="logo" src="../assets/images/lakeridge_logo.svg" alt="Logo" />
+    </router-link>
+
     <nav>
       <ul>
         <li>
@@ -54,14 +58,14 @@ li {
   text-decoration: none;
 }
 
-li,
-a,
-:visited {
-  color: #231f20;
-  text-decoration: none;
-@media only screen and (max-width: 599px) {
-  .logo {
-    width: 70%;
+li, a,
+  :visited {
+    color: #231f20;
+    text-decoration: none;
+  @media only screen and (max-width: 599px) {
+    .logo {
+      width: 70%;
+    }
   }
 }
 </style>
