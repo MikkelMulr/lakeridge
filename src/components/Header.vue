@@ -41,7 +41,6 @@ export default {
   justify-content: flex-start;
 }
 
-<<<<<<< Updated upstream
 nav {
   margin-left: auto;
   font-size: 2.5rem;
@@ -60,11 +59,9 @@ a,
 :visited {
   color: #231f20;
   text-decoration: none;
-=======
 @media only screen and (max-width: 599px) {
   .logo {
     width: 70%;
   }
->>>>>>> Stashed changes
 }
 </style>
