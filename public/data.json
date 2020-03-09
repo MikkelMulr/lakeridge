@@ -135,56 +135,56 @@
   "resources": [{
     "id": 1,
     "res": [{
-        "title": "Link Title 2",
-        "href": "http://www.cancer.ca/en/cancer-information/diagnosis-and-treatment/clinical-trials/benefits-risks-and-costs/?region=on"
+        "title": "How Are Participants Protected?",
+        "href": "https://clinicaltrials.gov/ct2/about-studies/learn#HowAreParticipants"
       },
       {
-        "title": "Link Title",
-        "href": "https://itstartswithme.ca/faq/"
+        "title": "Benefits, risks and costs of clinical trials",
+        "href": "http://www.cancer.ca/en/cancer-information/diagnosis-and-treatment/clinical-trials/benefits-risks-and-costs/?region=on"
       }
     ]
   }, {
     "id": 2,
     "res": [{
-        "title": "Link Title",
-        "href": "https://clinicaltrials.gov/ct2/about-studies/learn#HowAreParticipants"
+        "title": "Learn about clinical trials",
+        "href": "https://clinicaltrials.gov/ct2/about-studies/learn#ClinicalTrials"
       },
       {
-        "title": "Link Title",
-        "href": "http://www.cancer.ca/en/cancer-information/diagnosis-and-treatment/clinical-trials/benefits-risks-and-costs/?region=on"
+        "title": "Types and phases of clinical trials",
+        "href": "http://www.cancer.ca/en/cancer-information/diagnosis-and-treatment/clinical-trials/types-and-phases-of-clinical-trials/?region=on"
       }
     ]
   }, {
     "id": 3,
     "res": [{
-        "title": "Link Title",
-        "href": "https://clinicaltrials.gov/ct2/about-studies/learn#HowAreParticipants"
+        "title": "Find a study - ClinicalTrials",
+        "href": "https://clinicaltrials.gov/ct2/home"
       },
       {
-        "title": "Link Title",
-        "href": "http://www.cancer.ca/en/cancer-information/diagnosis-and-treatment/clinical-trials/benefits-risks-and-costs/?region=on"
+        "title": "It starts with me - Getting Started",
+        "href": "https://itstartswithme.ca/getting-started/"
       }
     ]
   }, {
     "id": 5,
     "res": [{
-        "title": "Link Title",
-        "href": "https://clinicaltrials.gov/ct2/about-studies/learn#HowAreParticipants"
+        "title": "Relationship to Usual Health Care",
+        "href": "https://clinicaltrials.gov/ct2/about-studies/learn#Relationship"
       },
       {
-        "title": "Link Title",
-        "href": "http://www.cancer.ca/en/cancer-information/diagnosis-and-treatment/clinical-trials/benefits-risks-and-costs/?region=on"
+        "title": "It starts with me - FAQ",
+        "href": "https://itstartswithme.ca/faq/"
       }
     ]
   }, {
     "id": 6,
     "res": [{
-        "title": "Link Title",
+        "title": "How Are Participants Protected?",
         "href": "https://clinicaltrials.gov/ct2/about-studies/learn#HowAreParticipants"
       },
       {
-        "title": "Link Title",
-        "href": "http://www.cancer.ca/en/cancer-information/diagnosis-and-treatment/clinical-trials/benefits-risks-and-costs/?region=on"
+        "title": "Decideing to be in a trial",
+        "href": "https://www.cancer.ca/en/cancer-information/diagnosis-and-treatment/clinical-trials/deciding-to-be-in-a-clinical-trial/?region=on"
       }
     ]
   }]
