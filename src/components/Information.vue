@@ -33,11 +33,11 @@
 		<!-- container for img -->
 		<div class="imgCont">
 			<img src="../assets/images/ill.svg" alt="ill">
-
-		</div>
 			<div class="Information--nextBtn" v-on:click="nextEvent">
 				<img src="../assets/images/next.svg" alt="nextBtn">
 			</div>
+
+		</div>
 
 	</div>
 
@@ -124,31 +124,41 @@
 	}
 
 	.Information--nextBtn {
-		width: 100%;
-		position: absolute;
-		padding-top: 575px;
+		display: flex;
 		justify-content: flex-end;
-		align-items: flex-end;
+		width: 100%;
 	}
 
 
 	.Information--nextBtn img {
+		width: 100%;
+		display: flex;
 		width: 60px;
 		cursor: pointer;
-		margin-left: 80%;
 	}
 
 	/* Mobile View */
 
 	@media only screen and (max-width: 599px) {
+
 		#Information {
 			flex-direction: column;
+			padding-top: 20px;
 		}
 
 		.imgCont {
 			margin-top: 0px;
 			width: 100%;
 			padding: 0px 50px;
+		}
+
+		.infoCont {
+			width: 100%;
+		}
+
+		.infoCont h2 {
+			font-size: 30px;
+			font-weight: 900;
 		}
 	}
 </style>
