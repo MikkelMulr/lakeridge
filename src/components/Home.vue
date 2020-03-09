@@ -1,22 +1,17 @@
 <template>
 	<main id="home">
-		<!-- <section class="container"> -->
 		<section class="home-headings">
-			<!-- <section class="line">
+			<section class="line">
 				<img src="../assets/images/line.svg" alt="line" />
-			</section>-->
-			<p class="home-para">
-				Know the facts behind
-				<br />
-				<span>&nbsp;</span> the common myths of
-			</p>
+			</section>
+			<p>Know the facts behind</p>
+			<p>the common myths of</p>
 			<h1>Clinical Trials</h1>
 		</section>
 
 		<section class="play">
 			<router-link class="playButton button" :to="{name: 'GameBox', props: { } }">Let's Go</router-link>
 		</section>
-		<!-- </section> -->
 	</main>
 </template>
 
@@ -35,14 +30,25 @@
 		height: 80vh;
 		background: #f5f5f5;
 		margin: 2rem auto 0 auto;
-		/* overflow: hidden; */
-		overflow-x: hidden;
+		overflow: hidden;
 		border-radius: 0.5rem;
 		min-height: 83vh;
 	}
 
+	.line {
+		display: flex;
+		position: absolute;
+		width: 100%;
+		justify-content: center;
+		text-align: center;
+		padding-top: 1.5rem;
+		padding-right: 45rem;
+		height: 10rem;
+	}
+
 	.home-headings {
 		padding: 15rem 0 10rem 0;
+		position: relative;
 	}
 
 	h1 {
@@ -54,21 +60,9 @@
 		padding-top: 0.95rem;
 	}
 
-	.home-para::before {
-		content: "";
-		border-left: 1rem solid #242323;
-		padding-bottom: 3.5rem;
-	}
-	/* p::before {
-				content: "";
-				border-left: 1rem solid #242323;
-				padding-bottom: 3.5rem;
-			} */
-	/* padding-right: 2rem; */
 	p {
 		font-size: 4rem;
 		font-weight: 400;
-		/* padding-left: 6rem; */
 		margin-left: 2rem;
 	}
 
@@ -99,14 +93,5 @@
 	.playButton:hover {
 		box-shadow: none;
 	}
-	/*
-																																																																																																															.hex {
-																																																																																																																margin-left: -10rem;
-																																																																																																																margin-top: 32rem;
-																																																																																																																width: 20rem;
-																																																																																																																height: 20rem;
-																																																																																																																background: rgba(255, 255, 255, 0.308);
-																																																																																																																clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-																																																																																																															} */
 </style>
 
