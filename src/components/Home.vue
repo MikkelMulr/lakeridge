@@ -41,7 +41,7 @@
 		width: 100%;
 		justify-content: center;
 		text-align: center;
-		padding-top: 1.5rem;
+		padding-top: 1.25rem;
 		padding-right: 45rem;
 		height: 10rem;
 	}
