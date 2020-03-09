@@ -71,6 +71,7 @@
 		margin-top: 30px;
 		background-color: #fff;
 		display: flex;
+		flex-direction: row;
 	}
 	
 	.facts {
@@ -134,5 +135,19 @@
 		width: 60px;
 		cursor: pointer;
 		margin-left: 80%;
+	}
+
+	/* Mobile View */
+
+	@media only screen and (max-width: 599px) {
+		#Information {
+			flex-direction: column;
+		}
+
+		.imgCont {
+			margin-top: 0px;
+			width: 100%;
+			padding: 0px 50px;
+		}
 	}
 </style>
