@@ -120,7 +120,7 @@
 	}
 
 	.imgCont img {
-		width: 100%;
+		width: 90%;
 	}
 
 	.Information--nextBtn {
