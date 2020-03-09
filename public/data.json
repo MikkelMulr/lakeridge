@@ -131,5 +131,61 @@
       },
       "art": "./link-to-the-illustration"
     }
-  ]
+  ],
+  "resources": [{
+    "id": 1,
+    "res": [{
+        "title": "Link Title 2",
+        "href": "http://www.cancer.ca/en/cancer-information/diagnosis-and-treatment/clinical-trials/benefits-risks-and-costs/?region=on"
+      },
+      {
+        "title": "Link Title",
+        "href": "https://itstartswithme.ca/faq/"
+      }
+    ]
+  }, {
+    "id": 2,
+    "res": [{
+        "title": "Link Title",
+        "href": "https://clinicaltrials.gov/ct2/about-studies/learn#HowAreParticipants"
+      },
+      {
+        "title": "Link Title",
+        "href": "http://www.cancer.ca/en/cancer-information/diagnosis-and-treatment/clinical-trials/benefits-risks-and-costs/?region=on"
+      }
+    ]
+  }, {
+    "id": 3,
+    "res": [{
+        "title": "Link Title",
+        "href": "https://clinicaltrials.gov/ct2/about-studies/learn#HowAreParticipants"
+      },
+      {
+        "title": "Link Title",
+        "href": "http://www.cancer.ca/en/cancer-information/diagnosis-and-treatment/clinical-trials/benefits-risks-and-costs/?region=on"
+      }
+    ]
+  }, {
+    "id": 5,
+    "res": [{
+        "title": "Link Title",
+        "href": "https://clinicaltrials.gov/ct2/about-studies/learn#HowAreParticipants"
+      },
+      {
+        "title": "Link Title",
+        "href": "http://www.cancer.ca/en/cancer-information/diagnosis-and-treatment/clinical-trials/benefits-risks-and-costs/?region=on"
+      }
+    ]
+  }, {
+    "id": 6,
+    "res": [{
+        "title": "Link Title",
+        "href": "https://clinicaltrials.gov/ct2/about-studies/learn#HowAreParticipants"
+      },
+      {
+        "title": "Link Title",
+        "href": "http://www.cancer.ca/en/cancer-information/diagnosis-and-treatment/clinical-trials/benefits-risks-and-costs/?region=on"
+      }
+    ]
+  }]
 }
