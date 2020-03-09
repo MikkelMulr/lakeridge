@@ -27,7 +27,6 @@
 			<div class="facts" v-for="(item) in mythData.facts.fact_list" :key="item">
 				<p class="fact">{{item}}</p>
 			</div>
-			<div class="Information--nextBtn" v-on:click="nextEvent">Next</div>
 		</div>
 
 		<!-- container for img -->
@@ -35,6 +34,9 @@
 			<img src="../assets/images/ill.svg" alt="ill">
 
 		</div>
+			<div class="Information--nextBtn" v-on:click="nextEvent">
+				<img src="../assets/images/next.svg" alt="nextBtn">
+			</div>
 
 	</div>
 
@@ -117,5 +119,20 @@
 
 	.imgCont img {
 		width: 100%;
+	}
+
+	.Information--nextBtn {
+		width: 100%;
+		position: absolute;
+		padding-top: 575px;
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+
+
+	.Information--nextBtn img {
+		width: 60px;
+		cursor: pointer;
+		margin-left: 80%;
 	}
 </style>
