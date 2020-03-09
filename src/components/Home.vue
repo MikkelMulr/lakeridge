@@ -1,16 +1,5 @@
 <template>
   <main id="home">
-    <header>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>
-            <router-link :to="{name: 'Browse', props: { } }">Browse Myths</router-link>
-          </li>
-          <li>Resources</li>
-        </ul>
-      </nav>
-    </header>
     <section class="home-headings">
       <p class="home-para">Know the facts behind</p>
       <p>the common myths of</p>
@@ -41,35 +30,6 @@ export default {
   height: 90vh;
   max-height: 100vh;
   overflow: hidden;
-}
-
-header {
-  display: flex;
-  flex-direction: row;
-}
-
-.logo {
-  padding: 3rem;
-}
-
-nav {
-  margin-left: auto;
-  font-size: 2.5rem;
-}
-
-li {
-  list-style: none;
-  display: inline-block;
-  color: #231f20;
-  padding: 5rem 9rem 0rem 0.001rem;
-  text-decoration: none;
-}
-
-li,
-a,
-:visited {
-  color: #231f20;
-  text-decoration: none;
 }
 
 .home-headings {

@@ -18,6 +18,7 @@
 		<div class="imgCont">
 
 		</div>
+
 	</div>
 	<div id="Information" v-else>
 
