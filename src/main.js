@@ -15,7 +15,7 @@ const router = new VueRouter({
 		{ path: '/', name: 'Home', component: Home },
 		{ path: '/browse', name: 'Browse', component: Browse },
 		{ path: '/play', name: 'GameBox', component: GameBox },
-		{ path: '/resources', name: 'GameBox', component: Resources }
+		{ path: '/resources', name: 'Resources', component: Resources }
 	],
 	mode: 'history' //cuts some older browser support to fix issue where page refreshes on navigating between routes
 });
