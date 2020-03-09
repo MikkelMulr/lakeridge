@@ -1,9 +1,10 @@
 <template>
   <div class="Resources">
     <h4>Resources</h4>
-    <div class="bubble" v-for="(item) in this.resources.res" :key="item.id">
+    <div class="bubble" v-for="(item) in this.resources.data.resources.res" :key="item.id">
       <h2>{{item.title}}</h2>
-      <a :href="item.href"></a>
+      <a :href="item.href[0]"></a>
+      <a :href="item.href[1]"></a>
     </div>
   </div>
 </template>
