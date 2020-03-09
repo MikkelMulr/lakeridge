@@ -1,6 +1,9 @@
 <template>
   <main id="home">
     <section class="home-headings">
+      <div class="line">
+        <img src="../assets/images/line.svg" alt="line">
+      </div>
       <p class="home-para">Know the facts behind</p>
       <p>the common myths of</p>
       <h1>Clinical Trials</h1>
@@ -24,6 +27,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
 #home {
   background: #c7c8ca;
   width: 100vw;
@@ -32,6 +36,19 @@ export default {
   overflow: hidden;
 }
 
+
+.line {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  padding-right: 450px;
+}
+
+.line {
+  height: 100px;
+}
 .home-headings {
   padding: 6rem 0;
 }
@@ -39,13 +56,13 @@ export default {
 h1 {
   align-items: center;
   font-size: 7rem;
-  font-weight: 400;
   text-align: center;
   line-height: 8rem;
+  font-weight: 100;
 }
 p {
-  font-size: 4rem;
-  font-weight: 400;
+  font-size: 3.7rem;
+  font-weight: 900;
 }
 
 .play {
