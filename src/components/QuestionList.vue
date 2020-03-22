@@ -15,7 +15,7 @@
         :myth="item.myth_title"
         :handleClick="updateMythClicked"
       />
-      <router-link :to="{name: 'Home', props: { } }">Return to menu</router-link>
+      <!-- <router-link :to="{name: 'Home', props: { } }">Return to menu</router-link> -->
     </div>
   </div>
 </template>
@@ -59,7 +59,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   height: 100%;
   width: 100%;
 }
