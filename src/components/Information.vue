@@ -10,7 +10,7 @@
       <div class="facts" v-for="(item) in mythData.facts.fact_list" :key="item">
         <p class="fact">{{item}}</p>
       </div>
-      <div class="Information--nextBtn" v-on:click="returnTo">Back to Myths</div>
+      <!-- <div class="Information--nextBtn" v-on:click="returnTo">Back to Myths</div> -->
     </div>
 
     <!-- container for img -->

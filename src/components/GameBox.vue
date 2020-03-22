@@ -40,8 +40,12 @@ export default {
   },
   methods: {
     updateCurrentMyth: function() {
-      this.currentMyth += 1;
-      this.viewState = !this.viewState;
+      if (this.currentMyth == 5) {
+        this.$router.push({ name: "Resources" });
+      } else {
+        this.currentMyth += 1;
+        this.viewState = !this.viewState;
+      }
     },
     updateViewState: function() {
       this.viewState = !this.viewState;
