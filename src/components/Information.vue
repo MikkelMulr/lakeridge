@@ -14,7 +14,10 @@
     </div>
 
     <!-- container for img -->
-    <div class="imgCont"></div>
+    <div class="imgCont">
+      <img :src="require(`../assets/images/0${mythData.id}illust.png`)" alt="ill" />
+    </div>
+    <div class="backTo" v-on:click="returnTo">Back</div>
   </div>
   <div id="Information" v-else>
     <!-- container for Information -->
@@ -126,6 +129,22 @@ export default {
   width: 60px;
   cursor: pointer;
   margin-left: 80%;
+}
+
+.backTo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #27aae1;
+  color: #fff;
+  border-radius: 50%;
+  /* padding: 1rem; */
+  height: 7rem;
+  width: 7rem;
+  text-decoration: none;
+  margin: 0.5rem;
+  font-size: 1.5rem;
 }
 
 /* Mobile View */
