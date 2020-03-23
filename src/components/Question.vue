@@ -1,40 +1,42 @@
 // This component is used to display the myth (chat bubbles) to the user while in game mode
 <template>
-	<main class="Question">
-		<section class="device">
-			<div class="marvel-device iphone-x">
-				<div class="notch">
-					<div class="camera"></div>
-					<div class="speaker"></div>
-				</div>
-				<div class="top-bar"></div>
-				<div class="sleep"></div>
-				<div class="bottom-bar"></div>
-				<div class="volume"></div>
-				<div class="overflow">
-					<div class="shadow shadow--tr"></div>
-					<div class="shadow shadow--tl"></div>
-					<div class="shadow shadow--br"></div>
-					<div class="shadow shadow--bl"></div>
-				</div>
-				<div class="inner-shadow"></div>
-				<div class="screen">
-					<!-- Content goes here -->
-					<div class="bubble" v-for="(item) in mythData.bubbles" :key="item.id">
-						<p>{{item}}</p>
+	<section class="container">
+		<main class="Questions">
+			<section class="device">
+				<div class="marvel-device iphone-x">
+					<div class="notch">
+						<div class="camera"></div>
+						<div class="speaker"></div>
+					</div>
+					<div class="top-bar"></div>
+					<div class="sleep"></div>
+					<div class="bottom-bar"></div>
+					<div class="volume"></div>
+					<div class="overflow">
+						<div class="shadow shadow--tr"></div>
+						<div class="shadow shadow--tl"></div>
+						<div class="shadow shadow--br"></div>
+						<div class="shadow shadow--bl"></div>
+					</div>
+					<div class="inner-shadow"></div>
+					<div class="screen">
+						<!-- Content goes here -->
+						<div class="bubble" v-for="(item) in mythData.bubbles" :key="item.id">
+							<p>{{item}}</p>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section class="question-side">
-			<h1>{{mythData.myth_title}}</h1>
-			<h2>If you were in this situation, how would you respond?</h2>
-			<div class="choices">
-				<div class="nextBtn" v-on:click="nextEvent">{{buttons.true}}</div>
-				<div class="nextBtn" v-on:click="nextEvent">{{buttons.false}}</div>
-			</div>
-		</section>
-	</main>
+			</section>
+			<section class="question-side">
+				<h1>{{mythData.myth_title}}</h1>
+				<h2>If you were in this situation, how would you respond?</h2>
+				<div class="choices">
+					<div class="nextBtn" v-on:click="nextEvent">{{buttons.true}}</div>
+					<div class="nextBtn" v-on:click="nextEvent">{{buttons.false}}</div>
+				</div>
+			</section>
+		</main>
+	</section>
 </template>
 
 <script>
@@ -52,10 +54,19 @@
 <style scoped>
 	@import "../assets/styles/devices.min.css";
 
-	.Question {
-		height: 90vh;
-		width: 100vw;
+	.container {
+		width: 95vw;
+		height: 80vh;
+		background: #f5f5f5;
+		margin: 1rem auto 0 auto;
 		overflow: hidden;
+		border-radius: 0.5rem;
+		min-height: 83vh;
+	}
+	.Questions {
+		height: 80vh;
+		width: 95vw;
+		/* overflow: hidden; */
 		display: flex;
 	}
 
