@@ -18,38 +18,39 @@
       <!-- <router-link :to="{name: 'Home', props: { } }">Return to menu</router-link> -->
     </div>
   </div>
+
 </template>
 
 <script>
-import QuestionCard from "./QuestionCard.vue";
-import Information from "./Information";
-// v-on:click="updateMythClicked(item.id)"
+	import QuestionCard from "./QuestionCard.vue";
+	import Information from "./Information";
+	// v-on:click="updateMythClicked(item.id)"
 
-export default {
-  name: "QuestionList",
-  props: {
-    mythData: Object
-  },
-  data() {
-    return {
-      viewState: false,
-      mythClicked: 0
-    };
-  },
-  components: {
-    QuestionCard,
-    Information
-  },
-  methods: {
-    updateViewState: function() {
-      this.viewState = !this.viewState;
-    },
-    updateMythClicked: function(id) {
-      this.mythClicked = id;
-      this.updateViewState();
-    }
-  }
-};
+	export default {
+		name: "QuestionList",
+		props: {
+			mythData: Object
+		},
+		data() {
+			return {
+				viewState: false,
+				mythClicked: 0
+			};
+		},
+		components: {
+			QuestionCard,
+			Information
+		},
+		methods: {
+			updateViewState: function() {
+				this.viewState = !this.viewState;
+			},
+			updateMythClicked: function(id) {
+				this.mythClicked = id;
+				this.updateViewState();
+			}
+		}
+	};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

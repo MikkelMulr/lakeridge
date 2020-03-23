@@ -2,7 +2,8 @@
 // 1 - display Myth "facts" after a user (while in game mode) has clicked their "answer" to a myth scenario
 // 2 - display Myth information respective to the myth card that is selected while in browse mode
 <template>
-  <div id="Information" v-if="viewType == 'browse'">
+
+<div id="Information" v-if="viewType == 'browse'">
     <!-- container for Information -->
     <div class="infoCont">
       <h2>{{mythData.myth_title}}</h2>
@@ -56,11 +57,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-/* Import fonts */
+  /* Import fonts */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-
 @import "../assets/styles/devices.min.css";
-
 /* Information Container */
 #Information {
   font-family: "Open Sans";
@@ -69,7 +68,6 @@ export default {
   display: flex;
   flex-direction: row;
 }
-
 .facts {
   /* height: 50px; */
   display: flex;
@@ -77,46 +75,39 @@ export default {
   justify-content: space-around;
   align-items: center;
 }
-
 .fact {
   width: 100%;
   height: 100%;
   background-color: #fff;
   color: #000;
 }
-
 /* Information Container styles */
 .infoCont {
   margin-top: 0px;
   width: 50%;
   padding: 0px 50px 50px 50px;
 }
-
 .infoCont h2 {
   font-size: 50px;
   font-weight: 300;
   text-align: left;
   margin-bottom: 30px;
 }
-
 .infoCont p {
   font-size: 20px;
   margin: 10px 0px 10px 0px;
   text-align: left;
   line-height: 30px;
 }
-
 /* Image Container Styles */
 .imgCont {
   margin-top: 0px;
   width: 50%;
   padding: 0px 50px;
 }
-
 .imgCont img {
   width: 100%;
 }
-
 .Information--nextBtn {
   width: 100%;
   position: absolute;
@@ -124,13 +115,11 @@ export default {
   justify-content: flex-end;
   align-items: flex-end;
 }
-
 .Information--nextBtn img {
   width: 60px;
   cursor: pointer;
   margin-left: 80%;
 }
-
 .backTo {
   display: flex;
   flex-direction: column;
@@ -146,14 +135,11 @@ export default {
   margin: 0.5rem;
   font-size: 1.5rem;
 }
-
 /* Mobile View */
-
 @media only screen and (max-width: 599px) {
   #Information {
     flex-direction: column;
   }
-
   .imgCont {
     margin-top: 0px;
     width: 100%;

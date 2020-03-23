@@ -1,22 +1,23 @@
 <template>
-  <div class="QuestionCard" v-on:click="handleClick(id - 1)">
-    <h4>{{myth}}</h4>
-  </div>
+	<div class="QuestionCard" v-on:click="handleClick(id - 1)">
+		<h4>{{myth}}</h4>
+	</div>
 </template>
 
 <script>
-export default {
-  name: "QuestionCard",
-  props: {
-    myth: String,
-    id: Number,
-    handleClick: Function
-  }
-};
+	export default {
+		name: "QuestionCard",
+		props: {
+			myth: String,
+			id: Number,
+			handleClick: Function
+		}
+	};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
 .QuestionCard {
   display: flex;
   flex-direction: row;
@@ -38,4 +39,5 @@ export default {
   color: #fff;
   box-shadow: 0.1rem 0.1rem 0.9rem 0.5rem #eeeeee44;
 }
+
 </style>
