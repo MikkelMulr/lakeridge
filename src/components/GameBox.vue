@@ -55,6 +55,7 @@
 			axios.get("./data.json").then(response => (this.myths = response));
 		}
 	};
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

@@ -27,13 +27,16 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-	#Browse {
-		width: 100vw;
-		height: 100vh;
-		padding: 2rem 10rem;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-	}
+#Browse {
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 300px; */
+}
 </style>
