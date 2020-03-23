@@ -3,7 +3,6 @@
 // 2 - display Myth information respective to the myth card that is selected while in browse mode
 <template>
 	<div id="Information" v-if="viewType == 'browse'">
-
 		<!-- container for Information -->
 		<div class="infoCont">
 			<h2>{{mythData.myth_title}}</h2>
@@ -11,19 +10,19 @@
 			<div class="facts" v-for="(item) in mythData.facts.fact_list" :key="item">
 				<p class="fact">{{item}}</p>
 			</div>
-			<div class="Information--nextBtn" v-on:click="returnTo">Back to Myths</div>
+			<!-- <div class="Information--nextBtn" v-on:click="returnTo">Back to Myths</div> -->
 		</div>
 
 		<!-- container for img -->
 		<div class="imgCont">
-
+			<img :src="require(`../assets/images/0${mythData.id}illust.png`)" alt="ill" />
 		</div>
-
+		<div class="backTo" v-on:click="returnTo">Back</div>
 	</div>
 	<div id="Information" v-else>
-
 		<!-- container for Information -->
-		<div class="infoCont"><h2>{{mythData.myth_title}}</h2>
+		<div class="infoCont">
+			<h2>{{mythData.myth_title}}</h2>
 			<p>{{mythData.fact_title}}</p>
 			<div class="facts" v-for="(item) in mythData.facts.fact_list" :key="item">
 				<p class="fact">{{item}}</p>
@@ -32,15 +31,12 @@
 
 		<!-- container for img -->
 		<div class="imgCont">
-			<img src="../assets/images/ill.svg" alt="ill">
-
+			<img :src="require(`../assets/images/0${mythData.id}illust.png`)" alt="ill" />
 		</div>
-			<div class="Information--nextBtn" v-on:click="nextEvent">
-				<img src="../assets/images/next.svg" alt="nextBtn">
-			</div>
-
+		<div class="Information--nextBtn" v-on:click="nextEvent">
+			<img src="../assets/images/next.svg" alt="nextBtn" />
+		</div>
 	</div>
-
 </template>
 
 <script>
@@ -60,21 +56,20 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 	/* Import fonts */
-	@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-	
+	@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
 	@import "../assets/styles/devices.min.css";
 
 	/* Information Container */
 	#Information {
-		font-family: 'Open Sans';
+		font-family: "Open Sans";
 		margin-top: 30px;
 		background-color: #fff;
 		display: flex;
 		flex-direction: row;
 	}
-	
+
 	.facts {
 		/* height: 50px; */
 		display: flex;
@@ -111,7 +106,6 @@
 		line-height: 30px;
 	}
 
-
 	/* Image Container Styles */
 	.imgCont {
 		margin-top: 0px;
@@ -131,11 +125,26 @@
 		align-items: flex-end;
 	}
 
-
 	.Information--nextBtn img {
 		width: 60px;
 		cursor: pointer;
 		margin-left: 80%;
+	}
+
+	.backTo {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: #27aae1;
+		color: #fff;
+		border-radius: 50%;
+		/* padding: 1rem; */
+		height: 7rem;
+		width: 7rem;
+		text-decoration: none;
+		margin: 0.5rem;
+		font-size: 1.5rem;
 	}
 
 	/* Mobile View */
