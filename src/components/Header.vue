@@ -1,6 +1,8 @@
 <template>
 	<header class="Header">
-		<img class="logo" src="../assets/images/lakeridge_logo.svg" alt="Logo" />
+		<router-link :to="{name: 'Home', props: { } }">
+			<img class="logo" src="../assets/images/lakeridge_logo.svg" alt="Logo" />
+		</router-link>
 		<nav>
 			<ul>
 				<li>
