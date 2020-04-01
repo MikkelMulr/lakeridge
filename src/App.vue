@@ -32,14 +32,10 @@
 		font-size: 62.5%;
 	}
 	#app {
-		font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-		text-align: center;
-		/* color: #2c3e50; */
+		min-height: 100vh;
 		color: #231f20;
-
 		background: #00baff;
 		overflow-x: hidden;
+		font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
 	}
 </style>

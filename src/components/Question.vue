@@ -4,11 +4,6 @@
 		<main class="Questions">
 			<section class="device">
 				<div class="marvel-device iphone-x">
-					<div class="notch">
-						<div class="camera"></div>
-						<div class="speaker"></div>
-					</div>
-					<div class="top-bar"></div>
 					<div class="sleep"></div>
 					<div class="bottom-bar"></div>
 					<div class="volume"></div>
@@ -55,36 +50,47 @@
 	@import "../assets/styles/devices.min.css";
 
 	.container {
-		width: 95vw;
-		height: 80vh;
 		background: #f5f5f5;
-		margin: 1rem auto 0 auto;
 		overflow: hidden;
-		border-radius: 0.5rem;
-		min-height: 83vh;
+		border-radius: 10px;
 	}
 	.Questions {
-		height: 80vh;
+		height: 82vh;
 		width: 95vw;
-		/* overflow: hidden; */
+		padding-top: 80px;
+		position: relative;
 		display: flex;
+		justify-content: flex-end;
 	}
 
 	.device {
-		width: 50vw;
-		height: 100%;
-		max-height: 90vh;
+		position: absolute;
+		left: 50%;
+		width: 50%;
+		height: auto;
+		max-height: 80vh;
+		padding-top: 70px;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
 		align-items: flex-start;
-		animation: appear 0.8s ease-out;
-		overflow: hidden;
+		transform-origin: center;
+		transform: scale(1.3) translateX(-40%);
+		animation: shrink 1s ease-in-out forwards 2.4s;
+	}
+
+	@keyframes shrink {
+		to {
+			left: 0%;
+			transform: scale(1.3) translateX(0%);
+		}
 	}
 
 	.screen {
-		padding: 5vh;
-		overflow: scroll;
+		padding: 20px;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.screen::-webkit-scrollbar {
@@ -92,76 +98,104 @@
 	}
 
 	p {
-		padding: 1rem;
-		color: #fff;
-		/* width: 70%; */
+		width: 70%;
+		padding: 10px 20px;
+		margin: 10px 0;
 		height: auto;
-		border-radius: 2.5rem;
-		padding: 3rem;
-		margin: 1rem 0;
-		font-size: 2.5rem;
+		border-radius: 20px;
+		font-size: 2rem;
+		font-weight: bolder;
 		text-align: left;
-		line-height: 1.5em;
+		transform: translateY(50rem) scale(0.5);
+		box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);
+		animation: pop 0.6s ease-out forwards;
 	}
 
 	.bubble:nth-child(even) p {
+		margin-left: auto;
 		background-color: #27aae1;
+		color: #fff;
 	}
 
 	.bubble:nth-child(odd) p {
 		background-color: #c7c8ca;
+		color: #383838;
 	}
 
-	.nextBtn {
-		font-size: 2rem;
-		padding: 2rem;
-		height: 60px;
-		width: 40%;
-		color: #fff;
-		background-color: rgb(92, 145, 161);
-		cursor: pointer;
-		border-radius: 2.5rem;
+	.bubble:nth-of-type(1) p {
+		animation-delay:  0s;
+	}
+	
+	.bubble:nth-of-type(2) p {
+		animation-delay:  0.9s;
+	}
+	
+	.bubble:nth-of-type(3) p {
+		animation-delay:  1.8s;
 	}
 
-	.choices {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		align-items: center;
-		align-content: stretch;
-		justify-self: center;
-		padding-top: 12em;
-	}
-
-	@keyframes appear {
+	@keyframes pop {
 		0% {
-			transform: translateY(50rem);
+			transform: translateY(50rem) scale(0.5);
+			opacity: 0;
 		}
-
 		100% {
-			transform: translateY(0);
+			transform: translateY(0) scale(1);
+			opacity: 1;
 		}
 	}
 
 	.question-side {
-		width: 50vw;
-		height: 100vh;
+		width: 50%;
+		opacity: 0;
+		height: auto;
 		display: flex;
 		flex-direction: column;
-		/* justify-content: space-between; */
-		/* align-items: center; */
+		justify-content: center;
+		align-items: center;
+		animation: expand 1s ease-in-out forwards 3s;
 	}
+
+	@keyframes expand {
+		to {
+			opacity: 1;
+		}
+	}
+
 	h1 {
-		align-items: stretch;
 		font-size: 5rem;
 		font-weight: 500;
-		/* text-align: left; */
+		padding: 0 50px;
+		border-left: 10px solid #383838;
 	}
+
 	h2 {
-		/* align-items: center; */
 		font-size: 3rem;
 		font-weight: 300;
-		text-align: left;
+		margin: 20px auto;
+		padding: 10px 60px;
+	}
+
+	.nextBtn {
+		width: 45%;
+		padding: 10px 20px;
+		border-radius: 20px;
+		border: 5px solid #27AAE1;
+		color: #383838;
+		background-color: #fff;
+		box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);
+		font-size: 2.2rem;
+		font-weight: bolder;
+		cursor: pointer;
+		align-self: stretch;
+	}
+
+	.choices {
+		padding: 10px 60px;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
 	}
 </style>

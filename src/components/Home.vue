@@ -1,11 +1,7 @@
 <template>
 	<main id="home">
 		<section class="home-headings">
-			<section class="line">
-				<img src="../assets/images/line.svg" alt="line" />
-			</section>
-			<p>Know the facts behind</p>
-			<p>the common myths of</p>
+			<p>Know the facts behind<br>the common myths of</p>
 			<h1>Clinical Trials</h1>
 		</section>
 
@@ -26,72 +22,51 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 	#home {
-		width: 95vw;
-		height: 80vh;
-		background: #f5f5f5;
-		margin: 2rem auto 0 auto;
-		overflow: hidden;
-		border-radius: 0.5rem;
 		min-height: 83vh;
-	}
-
-	.line {
+		width: 95vw;
+		margin: 0 auto;
+		background: #f5f5f5;
+		border-radius: 0.5rem;
 		display: flex;
-		position: absolute;
-		width: 100%;
+		flex-direction: column;
 		justify-content: center;
-		text-align: center;
-		padding-top: 1.25rem;
-		padding-right: 45rem;
-		height: 10rem;
+		align-items: center;
 	}
 
 	.home-headings {
-		padding: 15rem 0 10rem 0;
-		position: relative;
+		text-align: center;
 	}
 
 	h1 {
 		align-items: center;
 		font-size: 8rem;
 		font-weight: 400;
-		text-align: center;
-		line-height: 8rem;
-		padding-top: 0.95rem;
+		margin: 3rem;
 	}
 
 	p {
 		font-size: 4rem;
 		font-weight: 400;
-		margin-left: 2rem;
-	}
-
-	.play {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
+		box-shadow: inset 10px 0 0 #383838,
+					inset -10px 0 0 #383838;
 	}
 
 	.playButton {
-		height: 12rem;
-		width: 55rem;
-		font-size: 5rem;
-		text-transform: uppercase;
-		border-radius: 0.75rem;
+		display: inline-block;
+		margin: 20px auto;
+		padding: 2rem 15rem;
 		color: #fff;
-		background: #fa9500;
-		text-decoration: none;
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
+		background-color: #00baff;
+		border-radius: 10px;
+		font-size: 5rem;
 		font-weight: 700;
-		box-shadow: 0.1rem 0.1rem 0.3rem #242323;
+		text-decoration: none;
+		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+		transition: 0.25s;
 	}
 
 	.playButton:hover {
-		box-shadow: none;
+		box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
 	}
 </style>
 
