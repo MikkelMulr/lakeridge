@@ -1,5 +1,6 @@
 <template>
 	<div class="QuestionCard" v-on:click="handleClick(id - 1)">
+    <img :src="require(`../assets/images/0${id}illust.png`)" alt="ill" />
 		<h4>{{myth}}</h4>
 	</div>
 </template>
@@ -9,7 +10,8 @@
 		name: "QuestionCard",
 		props: {
 			myth: String,
-			id: Number,
+      id: Number,
+      art: String,
 			handleClick: Function
 		}
 	};
@@ -19,25 +21,39 @@
 <style scoped>
 
 .QuestionCard {
+  height: 200px;
+  margin: 15% 2.5% 2.5%;
+  flex-basis: 25%;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border: 5px solid rgba(56, 56, 56, 0.1);
   border-radius: 10px;
-  width: 70vw;
-  height: 85px;
-  background: #ddd;
-  margin: 2rem 0;
-  font-size: 2rem;
-  transition: all 0.35s linear;
+  background: #fff;
+  font-size: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  transition: all 0.25s ease-in-out;
 }
 
 .QuestionCard:hover {
-  transform: scale(1.075);
-  background-color: #27aae1;
-  color: #fff;
-  box-shadow: 0.1rem 0.1rem 0.9rem 0.5rem #eeeeee44;
+  border: 5px solid rgba(56, 56, 56, 0.4);
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.QuestionCard img {
+  margin: 10% auto 0;
+  width: 20%;
+  bottom: 60px;
+  transform-origin: bottom;
+  transform: scale(5);
+  filter: saturate(0.5);
+  transition: all 0.25s ease-in-out;
+}
+
+.QuestionCard:hover img {
+  transform: scale(5.2);
+  filter: saturate(1.2);
 }
 
 </style>

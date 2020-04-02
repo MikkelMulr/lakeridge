@@ -60,7 +60,8 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-	.question {
+	.question,
+	.info {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;

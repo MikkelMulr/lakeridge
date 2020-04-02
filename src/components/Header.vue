@@ -64,7 +64,7 @@
 
 	a,
 	:visited {
-		padding: 2px 5px;
+		padding: 2px 8px;
 		color: #f5f5f5;
 		font-weight: 600;
 		text-decoration: none;

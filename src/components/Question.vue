@@ -57,7 +57,7 @@
 	.Questions {
 		height: 82vh;
 		width: 95vw;
-		padding-top: 80px;
+		padding: 80px 0;
 		position: relative;
 		display: flex;
 		justify-content: flex-end;
@@ -153,10 +153,10 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		animation: expand 1s ease-in-out forwards 3s;
+		animation: show 1s ease-in-out forwards 3s;
 	}
 
-	@keyframes expand {
+	@keyframes show {
 		to {
 			opacity: 1;
 		}
@@ -166,14 +166,22 @@
 		font-size: 5rem;
 		font-weight: 500;
 		padding: 0 50px;
-		border-left: 10px solid #383838;
 	}
 
 	h2 {
 		font-size: 3rem;
 		font-weight: 300;
 		margin: 20px auto;
-		padding: 10px 60px;
+		padding: 10px 40px;
+		border-left: 10px solid #383838;
+		box-shadow: inset 0px 0 0 rgba(0, 0, 0, 0.05);
+		animation: fillShadow 1s ease-out forwards 4s;
+	}
+
+	@keyframes fillShadow {
+		to {
+			box-shadow: inset 1000px 0 0 rgba(0, 0, 0, 0.05);
+		}
 	}
 
 	.nextBtn {

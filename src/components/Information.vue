@@ -2,8 +2,7 @@
 // 1 - display Myth "facts" after a user (while in game mode) has clicked their "answer" to a myth scenario
 // 2 - display Myth information respective to the myth card that is selected while in browse mode
 <template>
-
-<div id="Information" v-if="viewType == 'browse'">
+  <div id="Information" v-if="viewType == 'browse'">
     <!-- container for Information -->
     <div class="infoCont">
       <h2>{{mythData.myth_title}}</h2>
@@ -16,9 +15,11 @@
 
     <!-- container for img -->
     <div class="imgCont">
-      <img :src="require(`../assets/images/0${mythData.id}illust.png`)" alt="ill" />
+      <img :src="require(`../assets/images/0${mythData.id}illust.png`)" alt="Illustration" />
     </div>
-    <div class="backTo" v-on:click="returnTo">Back</div>
+    <div class="backTo" v-on:click="returnTo">
+      <img src="../assets/images/next.svg" alt="nextBtn" />
+    </div>
   </div>
   <div id="Information" v-else>
     <!-- container for Information -->
@@ -32,7 +33,7 @@
 
     <!-- container for img -->
     <div class="imgCont">
-      <img :src="require(`../assets/images/0${mythData.id}illust.png`)" alt="ill" />
+      <img :src="require(`../assets/images/0${mythData.id}illust.png`)" alt="Illustration" />
     </div>
     <div class="Information--nextBtn" v-on:click="nextEvent">
       <img src="../assets/images/next.svg" alt="nextBtn" />
@@ -57,84 +58,106 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  /* Import fonts */
+/* Import fonts */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @import "../assets/styles/devices.min.css";
 /* Information Container */
 #Information {
+  position: relative;
+  height: 82vh;
+  width: 95vw;
   font-family: "Open Sans";
-  margin-top: 30px;
   background-color: #fff;
   display: flex;
   flex-direction: row;
-}
-.facts {
-  /* height: 50px; */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   align-items: center;
+  border-radius: 10px;
 }
-.fact {
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  color: #000;
-}
+
 /* Information Container styles */
 .infoCont {
-  margin-top: 0px;
   width: 50%;
-  padding: 0px 50px 50px 50px;
+  padding: 50px;
+  padding-right: 25px;
 }
+
 .infoCont h2 {
+  margin-bottom: 30px;
   font-size: 50px;
   font-weight: 300;
-  text-align: left;
-  margin-bottom: 30px;
 }
-.infoCont p {
-  font-size: 20px;
-  margin: 10px 0px 10px 0px;
-  text-align: left;
-  line-height: 30px;
+
+.fact {
+  font-size: 24px;
+  margin: 20px auto;
+  padding: 10px 30px;
+  opacity: 0;
+  border-left: 5px solid #383838;
+  border-radius: 0 5px 5px 0;
+  animation: show 0.35s ease-out forwards;
 }
+
+.facts:nth-of-type(1) .fact {
+  animation-delay: 0.45s;
+}
+
+.facts:nth-of-type(2) .fact {
+  animation-delay: 0.9s;
+}
+
+.facts:nth-of-type(3) .fact {
+  animation-delay: 1.35s;
+}
+
+@keyframes show {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /* Image Container Styles */
 .imgCont {
-  margin-top: 0px;
   width: 50%;
-  padding: 0px 50px;
+  padding: 50px;
+  padding-left: 25px;
 }
+
 .imgCont img {
   width: 100%;
 }
+
 .Information--nextBtn {
-  width: 100%;
   position: absolute;
-  padding-top: 575px;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-.Information--nextBtn img {
-  width: 60px;
+  bottom: 20px;
+  right: 40px;
   cursor: pointer;
-  margin-left: 80%;
-}
-.backTo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #27aae1;
-  color: #fff;
   border-radius: 50%;
-  /* padding: 1rem; */
-  height: 7rem;
-  width: 7rem;
-  text-decoration: none;
-  margin: 0.5rem;
-  font-size: 1.5rem;
+  width: 60px;
 }
+
+.Information--nextBtn img {
+  width: 90%;
+}
+
+.backTo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 60px;
+}
+
+.backTo img {
+  width: 90%;
+  /* transform: rotate(180deg); */
+}
+
 /* Mobile View */
 @media only screen and (max-width: 599px) {
   #Information {

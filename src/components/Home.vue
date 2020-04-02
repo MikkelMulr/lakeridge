@@ -22,11 +22,11 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 	#home {
-		min-height: 83vh;
+		min-height: 82vh;
 		width: 95vw;
 		margin: 0 auto;
 		background: #f5f5f5;
-		border-radius: 0.5rem;
+		border-radius: 10px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
