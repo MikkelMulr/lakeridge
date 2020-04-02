@@ -59,15 +59,15 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 /* Import fonts */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Raleway:ital,wght@0,200;1,800&display=swap');
 @import "../assets/styles/devices.min.css";
+
 /* Information Container */
 #Information {
   position: relative;
-  height: 82vh;
+  min-height: 82vh;
   width: 95vw;
-  font-family: "Open Sans";
-  background-color: #fff;
+  background: #f1f1f1;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -82,19 +82,24 @@ export default {
 }
 
 .infoCont h2 {
+  margin-left: 5px;
   margin-bottom: 30px;
   font-size: 50px;
-  font-weight: 300;
+  font-weight: 800;
+  font-style: italic;
+  font-family: 'Raleway', sans-serif;
 }
 
 .fact {
   font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
   margin: 20px auto;
   padding: 10px 30px;
   opacity: 0;
   border-left: 5px solid #383838;
   border-radius: 0 5px 5px 0;
-  animation: show 0.35s ease-out forwards;
+  animation: show 0.25s ease-out forwards;
 }
 
 .facts:nth-of-type(1) .fact {
@@ -107,6 +112,10 @@ export default {
 
 .facts:nth-of-type(3) .fact {
   animation-delay: 1.35s;
+}
+
+.facts:nth-of-type(4) .fact {
+  animation-delay: 1.80s;
 }
 
 @keyframes show {
@@ -158,15 +167,50 @@ export default {
   /* transform: rotate(180deg); */
 }
 
-/* Mobile View */
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 64em) {
   #Information {
     flex-direction: column;
   }
-  .imgCont {
-    margin-top: 0px;
+
+  .infoCont {
     width: 100%;
-    padding: 0px 50px;
+    order: 1;
+    padding: 50px;
+    padding-top: 25px;
+  }
+
+  .imgCont {
+    width: 100%;
+    order: 0;
+    padding: 50px;
+    padding-bottom: 0px;
+  }
+}
+
+/* Mobile View */
+@media only screen and (max-width: 40em) {
+  .infoCont {
+    width: 100%;
+    order: 1;
+    padding: 20px;
+    padding-top: 15px;
+  }
+
+  .imgCont {
+    width: 100%;
+    order: 0;
+    padding: 20px;
+    padding-bottom: 0px;
+  }
+
+  .infoCont h2 {
+    font-size: 20px;
+  }
+
+  .fact {
+    font-size: 14px;
+    margin: 10px auto;
+    padding: 5px 20px;
   }
 }
 </style>

@@ -29,7 +29,7 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 	.Header {
-		padding: 20px 30px;
+		padding: 20px 2.5vw;
 		display: flex;
 		flex-direction: row;
 	}
@@ -45,35 +45,56 @@
 
 	nav {
 		margin-left: auto;
-		font-size: 2.5rem;
 	}
 
 	nav ul {
 		height: 100%;
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-end;
 		align-items: center;
 	}
 
 	li {
 		list-style: none;
 		display: inline-block;
-		margin: 0 10px;
 		text-decoration: none;
 	}
 
-	a,
+	nav a,
 	:visited {
-		padding: 2px 8px;
-		color: #f5f5f5;
+		padding: 3px 8px;
+		color: #383838;
+		font-size: 24px;
 		font-weight: 600;
 		text-decoration: none;
 		border-radius: 5px;
 		transition: 0.25s;
+		font-family: 'Poppins', sans-serif;
 	}
 
 	nav a:hover {
 		background-color: #d6eaf8;
 		color: #383838;
+	}
+
+	@media only screen and (max-width: 40em) {
+		.Header {
+			flex-direction: column;
+		}
+
+		.logo {
+			height: 40px;
+			padding-left: 10px;
+		}
+
+		nav {
+			padding-top: 20px;
+			margin: auto;
+		}
+
+		nav a,
+		:visited {
+			font-size: 16px;
+		}
 	}
 </style>

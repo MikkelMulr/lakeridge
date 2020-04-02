@@ -15,7 +15,7 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 	footer {
-		padding: 20px 35px;
+		padding: 20px 2.5vw;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -23,8 +23,16 @@
 
 	.copy,
 	.link {
-		color: #f5f5f5;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+		color: #383838;
 		font-size: 1.5rem;
-		font-weight: bold;
+	}
+
+	@media only screen and (max-width: 40em) {
+		.copy,
+		.link {
+			font-size: 12px;
+		}
 	}
 </style>

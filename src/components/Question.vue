@@ -104,7 +104,7 @@
 		height: auto;
 		border-radius: 20px;
 		font-size: 2rem;
-		font-weight: bolder;
+		font-weight: 600;
 		text-align: left;
 		transform: translateY(50rem) scale(0.5);
 		box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);
@@ -164,13 +164,15 @@
 
 	h1 {
 		font-size: 5rem;
-		font-weight: 500;
 		padding: 0 50px;
+		font-weight: 200;
+		font-family: 'Raleway';
 	}
 
 	h2 {
 		font-size: 3rem;
-		font-weight: 300;
+		font-weight: 600;
+		font-style: italic;
 		margin: 20px auto;
 		padding: 10px 40px;
 		border-left: 10px solid #383838;
@@ -193,7 +195,7 @@
 		background-color: #fff;
 		box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1);
 		font-size: 2.2rem;
-		font-weight: bolder;
+		font-weight: 600;
 		cursor: pointer;
 		align-self: stretch;
 	}

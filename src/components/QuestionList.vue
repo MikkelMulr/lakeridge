@@ -59,12 +59,12 @@
 .CardView {
 	width: 95vw;
 	min-height: 82vh;
-	background: #ffffff;
+	background: #f5f5f5;
 	border-radius: 10px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: center;
+	align-content: center;
 }
 </style>
