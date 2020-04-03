@@ -167,7 +167,7 @@
 		font-size: 5rem;
 		padding: 0 50px;
 		font-weight: 200;
-		font-family: 'Raleway';
+		font-family: 'Raleway', sans-serif;
 	}
 
 	h2 {
@@ -264,6 +264,8 @@
 		}
 
 		h1 {
+			font-family: 'Poppins', sans-serif;
+			font-weight: 400;
 			font-size: 20px;
 		}
 
