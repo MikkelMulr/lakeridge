@@ -39,7 +39,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-content: center;
+  /* align-content: center; */
   flex-wrap: wrap;
   background: #f1f1f1;
 }
@@ -55,6 +55,9 @@ h1 {
   text-align: center;
   box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.1),
     inset -1px -1px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .resource-card {
@@ -109,12 +112,17 @@ h2 {
     flex: 0 0 40%;
     margin: 20px;
   }
+
+  h1 {
+    margin-bottom: 0px;
+  }
 }
 
 @media only screen and (max-width: 40em) {
   h1 {
     font-size: 26px;
     padding: 10px;
+    margin-bottom: 0px;
   }
 
   .resource-card {

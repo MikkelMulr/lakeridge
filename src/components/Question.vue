@@ -226,7 +226,6 @@
 		}
 
 		p {
-			/* font-weight: 400; */
 			font-size: 16px;
 		}
 
@@ -257,7 +256,6 @@
 		}
 
 		p {
-			/* font-weight: 400; */
 			font-size: 14px;
 		}
 

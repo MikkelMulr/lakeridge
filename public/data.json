@@ -68,10 +68,10 @@
 		{
 			"id": 4,
 			"myth_title": "Are trials only for patients who are out of options?",
-			"bubbles": [ "First message goes here", "Oh, this is the second message", "Should we ask the question now?" ],
+			"bubbles": [ "Tomorrow is my first appointment for trial", "But you are doing fine with current treatment", "I think it will improve my condition" ],
 			"answers": {
-				"true": "The right choice",
-				"false": "The wrong choice"
+				"true": "I hope it helps you get better",
+				"false": "This sounds like a very last option to be honest"
 			},
 			"facts": {
 				"fact_title": "In some cases trials are a last resort.",
@@ -86,10 +86,10 @@
 		{
 			"id": 5,
 			"myth_title": "Will I get the same quality of care during a trial?",
-			"bubbles": [ "First message goes here", "Oh, this is the second message", "Should we ask the question now?" ],
+			"bubbles": [ "He is statring his trials for cancer next month", "Ohh I hope everything goes well", "I'm afraid of how he will be treated" ],
 			"answers": {
-				"true": "The right choice",
-				"false": "The wrong choice"
+				"true": "Don't worry.. They will give him good care",
+				"false": "Yeah that might be something to worry about"
 			},
 			"facts": {
 				"fact_title": "All patients in clinical trials recieve a high standard of care.",
@@ -104,10 +104,10 @@
 		{
 			"id": 6,
 			"myth_title": "Are clinical trials dangerous? Are the trials unpleasant?",
-			"bubbles": [ "First message goes here", "Oh, this is the second message", "Should we ask the question now?" ],
+			"bubbles": [ "The trials are dangerous though, right?", "Not that I know of", "What if there are bad side effects?" ],
 			"answers": {
-				"true": "The right choice",
-				"false": "The wrong choice"
+				"true": "Don't worry, they have rules to keep you safe",
+				"false": "I am not sure.. It sounds risky"
 			},
 			"facts": {
 				"fact_title": "Safeguards are in place to protect the patients and minimize the risks.",
@@ -156,7 +156,7 @@
 					"href": "https://clinicaltrials.gov/ct2/about-studies/learn#HowAreParticipants"
 				},
 				{
-					"title": "Decideing to be in a trial",
+					"title": "Deciding to be in a trial",
 					"href": "https://www.cancer.ca/en/cancer-information/diagnosis-and-treatment/clinical-trials/deciding-to-be-in-a-clinical-trial/?region=on"
 				}
 			]
