@@ -44,7 +44,8 @@
 
 .QuestionCard img {
   margin: 10% auto 0;
-  width: 15%;
+  width: 55px;
+  height: 55px;
   bottom: 60px;
   transform-origin: bottom;
   transform: scale(6.2);
@@ -62,6 +63,11 @@
     flex-basis: 40%;
     margin-top: 20%;
   }
+
+  .QuestionCard img {
+    height: 35px;
+    width: 35px;
+  }
 }
 
 @media only screen and (max-width: 40em) {
@@ -72,6 +78,11 @@
 
   .QuestionCard:last-of-type {
     margin-bottom: 40px;
+  }
+
+  .QuestionCard img {
+    height: 40px;
+    width: 40px;
   }
 }
 </style>

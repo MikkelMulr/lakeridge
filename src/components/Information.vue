@@ -212,5 +212,20 @@ export default {
     margin: 10px auto;
     padding: 5px 20px;
   }
+
+  .Information--nextBtn,
+  .backTo {
+    width: 30px;
+    right: 10px;
+  }
+
+  .Information--nextBtn {
+    bottom: 10px;
+  }
+
+  .backTo {
+    top: unset;
+    bottom: 10px;
+  }
 }
 </style>

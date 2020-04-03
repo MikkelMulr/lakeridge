@@ -174,6 +174,10 @@
 			width: 100%;
 			font-size: 16px;
 		}
+		
+		.intro span {
+			font-size: 12px;
+		}
 
 		.home-headings {
 			width: 100%;
