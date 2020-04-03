@@ -252,7 +252,7 @@
 
 	@media only screen and (max-width: 40em) {
 		.Questions {
-			min-height: 120vh;
+			min-height: 100vh;
 		}
 
 		p {
