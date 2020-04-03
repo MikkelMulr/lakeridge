@@ -20,7 +20,8 @@
 </script>
 
 <style>
-	@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Raleway:ital,wght@0,200;1,800;1,900&display=swap');
+
 	* {
 		padding: 0;
 		margin: 0;
@@ -32,14 +33,16 @@
 		font-size: 62.5%;
 	}
 	#app {
-		font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-		text-align: center;
-		/* color: #2c3e50; */
-		color: #231f20;
+		min-height: 100vh;
+		color: #383838;
+		background: #fff;
+		font-family: "Poppins", sans-serif;
+		animation: change 1s forwards 10.5s;
+	}
 
-		background: #00baff;
-		overflow-x: hidden;
+	@keyframes change {
+		to {
+			/* background: #00baff; */
+		}
 	}
 </style>

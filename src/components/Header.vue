@@ -1,6 +1,8 @@
 <template>
 	<header class="Header">
-		<img class="logo" src="../assets/images/lakeridge_logo.svg" alt="Logo" />
+		<router-link :to="{name: 'Home', props: { } }">
+			<img class="logo" src="../assets/images/lakeridge_logo.svg" alt="Logo" />
+		</router-link>
 		<nav>
 			<ul>
 				<li>
@@ -27,14 +29,14 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 	.Header {
-		width: 100vw;
-		height: 10vh;
+		padding: 20px 2.5vw;
 		display: flex;
 		flex-direction: row;
 	}
 
 	.logo {
-		padding: 1rem;
+		height: 60px;
+		width: auto;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -43,23 +45,56 @@
 
 	nav {
 		margin-left: auto;
-		font-size: 2.5rem;
+	}
+
+	nav ul {
+		height: 100%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
 	}
 
 	li {
 		list-style: none;
 		display: inline-block;
-		color: #f5f5f5;
-
-		padding: 5rem 9rem 0rem 0.001rem;
 		text-decoration: none;
 	}
 
-	li,
-	a,
+	nav a,
 	:visited {
-		color: #f5f5f5;
-
+		padding: 3px 8px;
+		color: #383838;
+		font-size: 24px;
+		font-weight: 600;
 		text-decoration: none;
+		border-radius: 5px;
+		transition: 0.25s;
+		font-family: 'Poppins', sans-serif;
+	}
+
+	nav a:hover {
+		background-color: #d6eaf8;
+		color: #383838;
+	}
+
+	@media only screen and (max-width: 40em) {
+		.Header {
+			flex-direction: column;
+		}
+
+		.logo {
+			height: 40px;
+			padding-left: 10px;
+		}
+
+		nav {
+			padding-top: 20px;
+			margin: auto;
+		}
+
+		nav a,
+		:visited {
+			font-size: 16px;
+		}
 	}
 </style>

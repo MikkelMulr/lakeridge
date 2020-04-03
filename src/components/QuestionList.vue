@@ -1,23 +1,24 @@
 <template>
-  <div id="QuestionList">
-    <div class="CardView" v-if="this.viewState">
-      <Information
-        :mythData="mythData.data.myths[this.mythClicked]"
-        :returnTo="updateViewState"
-        :viewType="'browse'"
-      />
-    </div>
-    <div class="CardView" v-else>
-      <QuestionCard
-        v-for="(item) in mythData.data.myths"
-        :key="item.id"
-        :id="item.id"
-        :myth="item.myth_title"
-        :handleClick="updateMythClicked"
-      />
-      <!-- <router-link :to="{name: 'Home', props: { } }">Return to menu</router-link> -->
-    </div>
-  </div>
+	<div id="QuestionList">
+		<div class="CardView" v-if="this.viewState">
+			<Information
+				:mythData="mythData.data.myths[this.mythClicked]"
+				:returnTo="updateViewState"
+				:viewType="'browse'"
+			/>
+		</div>
+		<div class="CardView" v-else>
+			<QuestionCard
+			v-for="(item) in mythData.data.myths"
+			:key="item.id"
+			:id="item.id"
+			:art="item.art"
+			:myth="item.myth_title"
+			:handleClick="updateMythClicked"
+		/>
+		<!-- <router-link :to="{name: 'Home', props: { } }">Return to menu</router-link> -->
+		</div>
+	</div>
 
 </template>
 
@@ -55,13 +56,15 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-#QuestionList {
-  flex-wrap: wrap;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  height: 100%;
-  width: 100%;
+.CardView {
+	width: 95vw;
+	min-height: 82vh;
+	background: #f5f5f5;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
 }
 </style>
