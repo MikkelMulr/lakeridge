@@ -264,8 +264,6 @@
 		}
 
 		h1 {
-			font-family: 'Poppins', sans-serif;
-			font-weight: 400;
 			font-size: 20px;
 		}
 
