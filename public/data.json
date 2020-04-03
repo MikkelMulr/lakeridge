@@ -152,12 +152,12 @@
 			"id": 6,
 			"res": [
 				{
-					"title": "How Are Participants Protected?",
-					"href": "https://clinicaltrials.gov/ct2/about-studies/learn#HowAreParticipants"
-				},
-				{
 					"title": "Deciding to be in a trial",
 					"href": "https://www.cancer.ca/en/cancer-information/diagnosis-and-treatment/clinical-trials/deciding-to-be-in-a-clinical-trial/?region=on"
+				},
+				{
+					"title": "How Are Participants Protected?",
+					"href": "https://clinicaltrials.gov/ct2/about-studies/learn#HowAreParticipants"
 				}
 			]
 		},
