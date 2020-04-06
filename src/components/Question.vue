@@ -69,20 +69,20 @@
 		width: 50%;
 		height: auto;
 		max-height: 80vh;
-		padding-top: 70px;
+		padding-top: 0px;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
 		align-items: flex-start;
 		transform-origin: center;
-		transform: scale(1.3) translateX(-40%);
+		transform: scale(1.1) translateX(-40%);
 		animation: shrink 1s ease-in-out forwards 2.4s;
 	}
 
 	@keyframes shrink {
 		to {
 			left: 0%;
-			transform: scale(1.3) translateX(0%);
+			transform: scale(1.1) translateX(0%);
 		}
 	}
 
@@ -218,7 +218,7 @@
 
 		.device {
 			position: absolute;
-			top: -40px;
+			top: 0px;
 			left: 0%;
 			width: 100%;
 			animation: none;

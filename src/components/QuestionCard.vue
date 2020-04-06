@@ -48,13 +48,13 @@
   height: 55px;
   bottom: 60px;
   transform-origin: bottom;
-  transform: scale(6.2);
+  transform: scale(5.7);
   filter: saturate(0.5);
   transition: all 0.25s ease-in-out;
 }
 
 .QuestionCard:hover img {
-  transform: scale(6.5);
+  transform: scale(6);
   filter: saturate(1.2);
 }
 
